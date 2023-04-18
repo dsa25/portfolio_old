@@ -35,7 +35,7 @@ for (let i = 0; i < my_arr.length; i++) {
   cards += `
 		<div class="xs_100 sm_50 xl_33">
 		<div class="item">
-		<img src="/img/${my_arr[i].name}.jpg">
+		<img src="img/${my_arr[i].name}.jpg">
 		<div class="myworks">
 		<p class="name">${my_arr[i].name}</p>
 		`
