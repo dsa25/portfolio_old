@@ -43,8 +43,8 @@ for (let i = 0; i < my_arr.length; i++) {
     cards += `<p>${my_arr[i].stack[j]}</p>`
   }
   cards += `
-	<a href="/list/${my_arr[i].name}" class="show_md hide_xl btn" target="_blank">Перейти</a></div>
-  <a href="/list/${my_arr[i].name}" class="hide_md a_lg" target="_blank"></a></div></div>`
+	<a href="list/${my_arr[i].name}" class="show_md hide_xl btn" target="_blank">Перейти</a></div>
+  <a href="list/${my_arr[i].name}" class="hide_md a_lg" target="_blank"></a></div></div>`
 }
 
 wr_list.innerHTML = cards
