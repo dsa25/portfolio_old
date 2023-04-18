@@ -1,0 +1,276 @@
+@charset "utf-8";
+
+// @import "_functions.scss";
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  min-height: 100%;
+  scroll-behavior: smooth;
+  line-height: 1.2;
+  // text-rendering: optimizeSpeed;
+  // Используя optimizeLegibility вы делаете ваш текст приятнее на вид, но можете столкнуться с серьёзными проблемами производительности, такими как задержки в 30 секунд при загрузке
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+  padding: 0;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a img {
+    border: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+textarea:focus, input:focus, select:focus, button:focus {
+    outline: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+// html .ftb{
+//     height: 100%;
+// }
+// .ftb body{
+//     display: flex;
+//     flex-direction: column;
+//     min-height: 100%;
+//     height: auto;
+// }
+// .ftb footer{
+//     margin-top: auto;
+// }
+// .fg2{
+//     flex-grow: 2;
+// }
+
+::placeholder {
+    color: currentColor;
+}
+:focus::placeholder {
+    color: transparent;
+}
+
+
+
+// .switch {
+//     cursor: pointer;
+// }
+// [data-swb] {
+//     display: none;
+// }
+// [data-swb]:nth-child(1) {
+//     display: block;
+// }
+
+
+// .tac, center {text-align: center;}
+// .tal{text-align: left;}
+// .tar{text-align: right;}
+
+// .wsnw{white-space: nowrap;}
+// .wsnw_3p{
+// 	overflow: hidden;
+// 	text-overflow: ellipsis;
+// 	white-space: nowrap;
+// }
+// .wsn{white-space: normal;}
+
+// .usn{user-select: none;}
+
+
+// .ma {margin: auto}
+// .mla {margin-left: auto}
+// .mta {margin-top: auto}
+// .mra {margin-right: auto}
+// .mba {margin-bottom: auto}
+
+
+// $i: -5;
+// $step: 5;
+// @while $i <= 25 {
+//   $i: $i + $step;
+//     .m#{$i} {margin: #{$i}px}
+//     .mt#{$i} {margin-top: #{$i}px}
+//     .mr#{$i} {margin-right: #{$i}px}
+//     .mb#{$i} {margin-bottom: #{$i}px}
+//     .ml#{$i} {margin-left: #{$i}px}
+//     .p#{$i} {padding: #{$i}px}
+//     .pt#{$i} {padding-top: #{$i}px}
+//     .pr#{$i} {padding-right: #{$i}px}
+//     .pb#{$i} {padding-bottom: #{$i}px}
+//     .pl#{$i} {padding-left: #{$i}px}
+// }
+
+
+
+// $i: 0;
+// $step: 1;
+// $class: '.xl_';
+// @while $i <= 100 {
+//     @if $i == 11 {#{$class}#{$i} {width: 11.111111111111%}}
+//     @else if $i == 14 {#{$class}#{$i} {width: 14.285714285714%}}
+//     @else if $i == 16 {#{$class}#{$i} {width: 16.666666666667%}}
+//     @else if $i == 33 {#{$class}#{$i} {width: 33.333333333333%}}
+//     @else if $i == 66 {#{$class}#{$i} {width: 66.666666666667%}}
+//     @else {#{$class}#{$i} {width: $i + %}}
+//   $i: $i + $step;
+// }
+
+
+
+
+
+
+$points: (
+        xl: infinite,
+        // lg: 1220px,
+        md: 992px,
+        sm: 768px,
+        xs: 480px,
+);
+
+@each $key, $point in $points {
+
+    // $index: index($points, ($key $point));
+
+    $i: 0;
+    $step: 5;
+    $class: '.#{$key}_';
+
+    @if $key == xl {
+
+        // @while $i <= 100 {
+        //     #{$class}#{$i} {width: $i+0%}
+        //     $i: $i + $step;
+        // }
+
+        .db{display: block;}
+        .dib{display: inline-block;}
+        .show_xl {display: block;}
+        .hide_xl {display: none;}
+
+        .flex{display: flex}
+        .inline_flex{display: inline-flex}
+        .fdc{flex-direction: column}
+        .fdcr{flex-direction: column-reverse}
+        .fdr{flex-direction: row}
+        .fdrr{flex-direction: row-reverse}
+        .jcsb{justify-content: space-between}
+        .jcsa{justify-content: space-around}
+        .jcc{justify-content: center}
+        .jcfe{justify-content: flex-end}
+        .jcfs{justify-content: flex-start}
+        .aic{align-items: center}
+        .ais{align-items: stretch}
+        .aifs{align-items: flex-start}
+        .aife{align-items: flex-end}
+        .fww{flex-wrap: wrap}
+        .fwnw{flex-wrap: nowrap}
+        .fwwr{flex-wrap: wrap-reverse}
+        .order1{order: 1}
+        .order2{order: 2}
+        .order3{order: 3}
+
+        // .acs {align-content: stretch}
+        // .acc {align-content: center}
+        // .acsb {align-content: space-between}
+        // .acsa {align-content: space-around}
+        // .acfs {align-content: flex-start}
+        // .acfe {align-content: flex-end}
+        // .asfs {align-self: flex-start}
+        // .asfe {align-self: flex-end}
+        // .asc {align-self: center}
+        // .asa {align-self: auto}
+        // .ass {align-self: stretch}
+        // .asb {align-self: baseline}
+
+    }
+
+    @else{
+
+        @media only screen and (max-width: $point) {
+
+            // @while $i <= 100 {
+            //     #{$class}#{$i} {width: $i + 0%}
+            //     $i: $i + $step;
+            // }
+
+            .show_#{$key} {display: block}
+            .hide_#{$key} {display: none}
+            .flex_#{$key}{display: flex}
+            .inline_flex_#{$key}{display: inline-flex}
+            .fdc_#{$key}{flex-direction: column}
+            .fdcr_#{$key}{flex-direction: column-reverse}
+            .fdr_#{$key}{flex-direction: row}
+            .fdrr_#{$key}{flex-direction: row-reverse}
+            .jcsb_#{$key}{justify-content: space-between}
+            .jcsa_#{$key}{justify-content: space-around}
+            .jcc_#{$key}{justify-content: center}
+            .jcfe_#{$key}{justify-content: flex-end}
+            .jcfs_#{$key}{justify-content: flex-start}
+            .aic_#{$key}{align-items: center}
+            .ais_#{$key}{align-items: stretch}
+            .aifs_#{$key}{align-items: flex-start}
+            .aife_#{$key}{align-items: flex-end}
+            .fww_#{$key}{flex-wrap: wrap}
+            .fwnw_#{$key}{flex-wrap: nowrap}
+            .fwwr_#{$key}{flex-wrap: wrap-reverse}
+            .order1_#{$key}{order: 1;}
+            .order2_#{$key}{order: 2;}
+            .order3_#{$key}{order: 3;}
+
+            // .acs_#{$key}{align-content: stretch}
+            // .acc_#{$key}{align-content: center}
+            // .acsb_#{$key}{align-content: space-between}
+            // .acsa_#{$key}{align-content: space-around}
+            // .acfs_#{$key}{align-content: flex-start}
+            // .acfe_#{$key}{align-content: flex-end}
+            // .asfs_#{$key}{align-self: flex-start}
+            // .asfe_#{$key}{align-self: flex-end}
+            // .asc_#{$key}{align-self: center}
+            // .asa_#{$key}{align-self: auto}
+            // .ass_#{$key}{align-self: stretch}
+            // .asb_#{$key}{align-self: baseline}
+        }
+    }
+}

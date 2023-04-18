@@ -1,0 +1,130 @@
+*::-webkit-input-placeholder {color: currentColor;}
+*::-moz-placeholder          {color: currentColor;}
+*:-moz-placeholder           {color: currentColor;}
+*:-ms-input-placeholder      {color: currentColor;}
+
+*:focus::-webkit-input-placeholder {color: transparent}
+*:focus::-moz-placeholder          {color: transparent}
+*:focus:-moz-placeholder           {color: transparent}
+*:focus:-ms-input-placeholder      {color: transparent}
+
+.checkbox{
+  display: none;
+}
+.checkbox + label{
+  position: relative;
+  padding-left: 30px;
+  margin: 10px 0;
+  cursor: pointer;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+}
+.checkbox + label::before{
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background: #ccc;
+  left: 0px;
+  top: 50%;
+  margin-top: -10px;
+  border-radius: 3px;
+}
+.checkbox:checked + label::before{
+  background: #54b06d;
+}
+.checkbox:checked + label::after{
+  content: '\2713';
+  display: block;
+  position: absolute;
+  color: #ffffff;
+  height: 16px;
+  line-height: 16px;
+  top: 50%;
+  margin-top: -8px;
+  left: 4px;
+}
+.radio {
+  display: none;
+}
+.radio  + label{
+  position: relative;
+  display: inline-block;
+  margin: 5px 0;
+  padding-left: 30px;
+  cursor: pointer;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+}
+.radio + label::before{
+  display: block;
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -10px;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #8ecc45;
+  border-radius: 50%;
+}
+.radio:checked + label::after{
+  display: block;
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  margin-top: -5px;
+  width: 10px;
+  height: 10px;
+  background: #8ecc45;
+  border-radius: 50%;
+}
+.popup{
+  position: absolute;
+  width: calc(100% - 30px);
+  left: 15px;
+  right: 15px;
+  margin: 0 auto;
+  top: 10%;
+  padding: 30px;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.4s, visibility 0.4s;
+  transition: opacity 0.4s, visibility 0.4s;
+  z-index: 100;
+  max-width: 320px;
+  background-color: #021E4D;
+}
+.bgpopup{
+  position: fixed;
+  width: 150%;
+  height: 150%;
+  left: -25%;
+  top: -25%;
+  right: -25%;
+  bottom: -25%;
+  background:rgba(0,0,0,0.8);
+  cursor: default;
+  visibility:hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.4s, visibility 0.4s;
+  transition: opacity 0.4s, visibility 0.4s;
+  z-index: 99;
+}
+
+/*
+.bgpopup:target{
+  visibility: visible;
+  opacity: 1;
+}
+.bgpopup:target + .popup{
+  opacity: 1;
+  visibility: visible;
+}
+*/

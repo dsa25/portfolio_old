@@ -1,0 +1,32 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+$fonts_ssp: 'Source Sans Pro', sans-serif;
+
+// local fonts
+$fonts_chango: Chango;
+@font-face {
+ font-family: $fonts_chango;
+ src: url(../fonts/#{$fonts_chango}.ttf);
+}
+
+$fonts_consolas: Consolas;
+@font-face{
+ font-family: $fonts_consolas;
+ src: url(../fonts/#{$fonts_consolas}.ttf);
+}
+
+$fonts_cronus: Cronus;
+@font-face{
+ font-family: $fonts_cronus;
+ src: url(../fonts/#{$fonts_cronus}.otf);
+}
+$fonts_cronus_round: Cronus Round;
+@font-face{
+ font-family: $fonts_cronus_round;
+ src: url(../fonts/#{$fonts_cronus_round}.otf);
+}
+
+$fonts_yukafont: YUKAFONT;
+@font-face{
+ font-family: $fonts_yukafont;
+ src: url(../fonts/#{$fonts_yukafont}.otf);
+}

@@ -1,0 +1,14 @@
+
+// px -> rem
+@function calc_rem($size) {
+	$remSize: $size / 16px;
+	@return #{$remSize}rem;
+}
+
+// px -> em
+@function calc_em($size) {
+	$remSize: $size / 16px;
+	@return #{$remSize}em;
+}
+
+//

@@ -1,0 +1,27 @@
+// @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+// $fonts_ssp: 'Source Sans Pro', sans-serif;
+
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+$fonts_pacif: 'Pacifico', cursive;
+
+// шрифты локал
+$font-family: HelveticaNeueCyr;
+
+$fonts: $font-family;
+
+$fonts_m: #{$font-family}-Medium;
+$fonts_mb: #{$font-family}-Bold;
+$fonts_cf: ChunkFive;
+
+@font-face{
+ font-family: $fonts_m;
+ src: url(../fonts/#{$fonts_m}.ttf);
+}
+@font-face{
+ font-family: $fonts_mb;
+ src: url(../fonts/#{$fonts_mb}.ttf);
+}
+@font-face {
+ font-family: $fonts_cf;
+ src: url(../fonts/#{$fonts_cf}.ttf);
+}

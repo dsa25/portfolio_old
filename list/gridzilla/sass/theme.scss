@@ -1,0 +1,248 @@
+@import "_reset.scss";
+@import "_fonts.scss";
+@import "_grids.scss";
+@import "_mixins.scss";
+@import "_functions.scss";
+
+$color: #000;
+$color_bord: #ececec;
+
+body{
+	font: calc_rem(16px) $fonts_m;
+	// font: calc_rem(16px) $fonts_mb;
+	// font: calc_rem(16px) $fonts_cf;
+	color: $color;
+}
+a{
+	color: $color;
+}
+
+.container{
+	@include container(62em);
+}
+
+// theme header
+.header{
+	padding: 20px 0;
+	.container{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+}
+.logo{
+	font: calc_rem(36px) $fonts_cf;
+	position: relative;
+	&::after{
+		content: '.';
+		display: inline-block;
+		color: #f00;
+	}
+}
+form.search{
+	position: relative;
+	border: 1px solid $color_bord;
+	white-space: nowrap;
+	padding-right: 5px;
+	// margin: 0;
+	.fild_search,
+	.btn_search{
+		border: none;
+		display: inline-block;
+		background: transparent;
+		padding: 12px;
+		width: 80%;
+		color: #999;
+	}
+	.btn_search{
+		vertical-align: middle;
+		background: url(../img/search.png) center center no-repeat;
+		width: 19%;
+		cursor: pointer;
+	}
+}
+.main_menu{
+	width: 100%;
+	margin: 20px 0;
+	border-top: 1px solid $color_bord;
+	li{
+		display: inline-block;
+		padding: 20px 0 0;
+		border-top: 1px solid $color_bord;
+		position: relative;
+		margin-top: -1px;
+		&.active_li{
+			border-top: 1px solid red;
+		}
+		a{
+			display: block;
+			text-transform: uppercase;
+			font-size: calc_rem(14px);
+			padding: 0 20px;
+			border-right: 1px solid $color_bord;
+			&:hover,
+			&.active_a{
+				color: red;
+			}
+		}
+	}
+}
+// menu btn
+.btn_menu_m{
+	width: 38px;
+	height: 26px;
+	background: url(../img/btn_menu.png)  no-repeat;
+	cursor: pointer;
+	display: none;
+}
+// mobil menu
+.wrap_mobil_m {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 100%;
+	max-width: 350px;
+	background: rgba(0,0,0,.7);
+	padding: 20px;
+	display: none;
+}
+.mobil_m {
+	position: relative;
+}
+.close {
+	position: absolute;
+	display: inline-block;
+	top: -14px;
+	right: 0px;
+	font: bold calc_rem(25px) $fonts_m;
+	background: red;
+	width: 28px;
+	height: 28px;
+	text-align: center;
+	border-radius: 50%;
+	padding: 0;
+	line-height: 0.9;
+	border: 1px solid #fff;
+	color: #fff;
+	cursor: pointer;
+	&:hover{
+		box-shadow: 0 0 10px 5px rgba(255,255,255,0.9);
+	}
+}
+.main_menu_m {
+	margin: 10px 1%;
+	li{
+		margin: 20px;
+		a{
+			text-transform: uppercase;
+			color: #fff;
+			font-size: calc_rem(18px);
+			line-height: 2;
+			&:hover,
+			&.active_a{
+				text-decoration: underline;
+				color: rgba(yellow,0.7);
+			}
+		}
+	}
+}
+
+// theme footer
+.footer{
+	margin-top: 40px;
+	.container{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		min-height: 80px;
+		padding: 0;
+		border-top: 1px solid $color_bord;
+	}
+}
+.subscribe_s{
+
+}
+.link_social{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	border-radius: 5px;
+	margin-right: 2px;
+}
+.tw {
+	background: #97deed url(../img/tw.png) center center no-repeat;
+}
+.rss {
+	background: #fbca3d url(../img/rss.png) center center no-repeat;
+}
+.fb {
+	background: #79a8d6 url(../img/fb.png) center center no-repeat;
+}
+.rt {
+	background: #f23939 url(../img/rt.png) center center no-repeat;
+}
+
+.foot_text{
+	display: block;
+	text-align: right;
+	flex-grow: 1;
+	margin: 0;
+	.ftext{
+		font: calc_rem(12px) $fonts_mb;
+		margin: 5px 0;
+		&:nth-child(2){
+			font: calc_rem(11px) $fonts_m;
+		}
+	}
+}
+
+// media for theme
+// 		========
+// media for theme
+@media screen and (max-width: 600px){
+	.main_menu{
+		display: none;
+	}
+	.btn_menu_m{
+		align-self: center;
+		display: block;
+		margin: 0 30px;
+	}
+	.header{
+		.container{
+			justify-content: space-between;
+		}
+	}
+	.logo{
+		// flex-shrink: 1;
+		align-self: flex-end;
+		margin: 20px auto;
+	}
+	form.search{
+		order: 1;
+		margin: 30px auto;
+		width: 90%;
+		.btn_search{
+			height: 25px;
+			background-size: auto 100%;
+			text-align: right;
+			background-position: 90% center;
+		}
+		.fild_search{
+			font-size: 1rem;
+		}
+	}
+	.footer{
+		.subscribe_s{
+			width: 98%;
+			margin: 20px auto;
+			text-align: center;
+		}
+		.foot_text{
+			text-align: center;
+			margin: 20px 0;
+		}
+	}
+
+}

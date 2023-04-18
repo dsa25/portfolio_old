@@ -1,0 +1,149 @@
+*{padding: 0;margin: 0px;}
+
+body{
+	width: 100%;
+	min-width: 1080px;
+	min-height: 630px;
+	background-color: rgba(29, 20, 43, 0.5);
+	background-repeat: no-repeat;
+	/*background-image: url('https://i.ytimg.com/vi/IHLqWmGqOhY/maxresdefault.jpg');*/
+	/*background-image: url('http://s.picsfab.com/static/contents/images/3/e/a/54f854cedcdea8fe92aa3ef38e5db.jpg');*/
+	/*background-image: url('https://www.firestock.ru/wp-content/uploads/2015/05/wildtextures-creased-black-paper-texture-700x561.jpg');*/
+	background-image: url(../img/bgbg.jpg);
+	background-size: 100% 100%;
+	font: italic 20px/1.5 'consolas',сursive,Tahoma,sans-serif;
+	color: #fff;
+	padding-bottom: 30px;
+	box-sizing: border-box;
+}
+.head{
+	text-align: center;
+	color: rgba(255,255,255, 0.4);
+	font-size: 30px;
+	margin: 10px 0;
+}
+.wrap{
+	white-space: nowrap;
+	min-width: 700px;
+}
+.form_style{
+	white-space: normal;
+	display: inline-block;
+	width: 25%;
+	min-width: 300px;
+	margin: 40px 0 0 3%;
+	padding: 15px;
+	background: rgba(255, 0, 0, 0.1);
+	border: 5px solid rgba(255,255,255, 0.4);
+	text-align: center;
+
+}
+.form_style label{
+	display: inline-block;
+	width: 100%;
+}
+.form_style input[type="text"]{
+	width: 150px;
+	outline: none;
+	border: none;
+	background: rgba(255,255,255,0.3);
+	color: white;
+	height: 30px;
+	text-align: center;
+	font-size: 20px;
+	margin: 5px;
+}
+.form_style input[type="submit"],
+.btn{
+	font-size: 14px;
+	outline: none;
+	border: none;
+	background: rgba(179, 124, 67, 0.39);
+	line-height: 30px;
+	padding: 0 20px;
+	margin: 5px 0;
+	text-transform: uppercase;
+	display: inline-block;
+	color: #fff;
+	cursor: pointer;
+}
+.form_style input[type="submit"]:hover,
+.btn:hover{
+	box-shadow: 2px 2px 20px rgba(255,255,255,0.5);
+}
+#generate{
+	background: rgba(255, 0, 8, 0.33);
+}
+#prover{
+	background: rgba(9, 255, 28, 0.25);
+}
+.attempt_wrap{
+	display: inline-block;
+	width: 50%;
+	min-width: 280px;
+	margin: 40px 0 0 0.5%;
+	border: 5px solid rgba(255,255,255, 0.34);;
+	vertical-align: top;
+}
+h4.head + .text{
+	display: block;
+	margin-left: 150px;
+	text-align: left;
+	font-size: 18px;
+	position: relative;
+}
+h4.head + .text::after{
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -70px;
+	content: '';
+	width: 45px;
+	height: 57px;
+	background: url(../img/robo.png) 0 0 no-repeat;
+}
+
+.form_style .text{
+	font-size: 20px;
+	text-align: center;
+}
+.mess,.mess1,.mess2{
+	font-size: 17px;
+	text-align: left;
+	padding-left: 80px;
+}
+
+.r2,
+.avt{
+	display: block;
+	position: relative;
+	line-height: 2.2em;
+}
+.avt{
+	background-color: rgba(255,255,255,0.2);
+}
+.r2::after,
+.avt::after{
+	content: '';
+	display: block;
+	position: absolute;
+	left: 25px;
+	top: 5px;
+	width: 26px;
+	height: 29px;
+}
+.r2::after{
+	background: url(../img/robo.png) 0 0 no-repeat;
+	background-size: 100% 100%;
+}
+.avt::after{
+	background: url(../img/avatars_w.png) 0 0 no-repeat;
+	background-size: 100% 100%;
+}
+
+.mess1{
+	background: rgba(9, 255, 28, 0.25);
+}
+.mess2{
+	background: rgba(255, 0, 8, 0.33);
+}

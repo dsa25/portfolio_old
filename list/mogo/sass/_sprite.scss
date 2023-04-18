@@ -1,0 +1,39 @@
+// -----------------------------------------
+// cmd -> compass watch "NameFolder" (+config.rb)
+// OR
+// prepros ->
+// 				(+config.rb)
+		// and
+// 				Full compass support
+// -----------------------------------------
+
+
+/*
+=======================
+// sprites
+=======================
+*/
+@import "compass/utilities/sprites";
+
+// размер блоков - $nameFolder-sprite-dimensions: true or :false
+$spr-sprite-dimensions: true;
+
+// расположение иконок - $nameFolder-layout: smart or :horizontal or :diagonal
+$spr-layout: diagonal;
+
+// why?? add class
+// $spr-sprite-base-class: ".wrap";
+
+// папка с иконками для спрайта:
+// @import "../img/spr/*.png";
+@import "spr/*.png";
+
+// добавить в css
+@include all-spr-sprites;
+// @include spr-sprites(bgnum3);
+
+/*
+=======================
+// sprites
+=======================
+*/

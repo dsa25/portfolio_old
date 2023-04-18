@@ -1,0 +1,56 @@
+@import "susy";
+
+// Susy Grid Config
+// For more information: http://susydocs.oddbird.net/en/latest/settings/
+
+$susy: (
+  flow: ltr,  // ltr | rtl (left-to-Right | right-to-Left)
+  math: fluid,  /* fluid | static */
+  output: float,  /* float | isolate */
+  gutter-position: after,  /* before | after | split | inside | inside-static */
+  container: auto, 	/* <length> | auto */
+  container-position: center,  /* left | center | right | <length> [*2] */
+  columns: 12,  /* <number> | <list>(1 1 2 3 5 8) */
+  gutters: 1/4,  /* <ratio>   Default: 1/4 */
+  column-width: false, /* <length> | false/null */
+  global-box-sizing: content-box,  /* border-box | content-box */
+  last-flow: to,  	/* to | from */
+  debug: (
+    image: hide,  /* show | hide | show-columns | show-baseline ($base-line-height)*/
+    color: rgba(#66f, .25),
+    output: background,  /* background | overlay */
+    toggle: right top,  /* right | left and top | bottom */
+  ),
+  // use-custom: (               /* <boolean> */
+  //   background-image: true,
+  //   background-options: false,
+  //   box-sizing: true,
+  //   clearfix: false,
+  //   rem: true,
+  // )
+);
+
+$base-line-height: 3px;  // вертикальный ритм =)
+
+$mains_susy_layout: layout((3 1 1 2 4) 50em after isolate); // индивидуальная сетка для контейнера
+
+
+// --------------------------------
+// $susy-keywords: (
+//   container: auto,
+//   math: static fluid,
+//   output: isolate float flexbox,
+//   align: stretch start center end baseline,
+//   container-position: left center right,
+//   flow: ltr rtl,
+//   gutter-position: before after split inside inside-static,
+//   box-sizing: border-box content-box,
+//   span: full,
+//   edge: first alpha last omega full,
+//   spread: narrow wide wider,
+//   gutter-override: no-gutters no-gutter,
+//   role: nest,
+//   clear: break nobreak,
+//   debug image: show hide show-columns show-baseline,
+//   debug output: background overlay,
+// );

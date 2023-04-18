@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Ханойская башня</title>
+  <link rel="stylesheet" href="../css/jquery-ui.css">
+  <link rel="stylesheet" href="../css/dsa.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container">
+  <div class="description">
+    <h1 class="head">Ханойская башня</h1>
+    <a href="" id="autoriz">Войти</a>
+    <p class="text">Правила предельно просты: Вам необходимо переложить бублики с первого стержня на третий, используя второй как вспомогательный. За один ход можно брать только один бублик и бОльший нельзя класть =) на мЕньший. Укажи количество -> "СТАРТ" -> и в бой! Удачи!!! =)</p>
+  </div>
+  <form action="" class="send">
+  Бубликов: <input type="number" value="5" min="3" max="147" id="number">
+  <span id="btn_bubl">Старт</span>
+    <label class="statistics">
+      Время: <input type="text" id="time" readonly>
+      Ходов: <input type="text" id="turns" readonly>
+      <sup id="pow"></sup>
+      <sup id="pow_stat"></sup>
+    </label>
+  </form>
+
+  </div>
+</header>
+<div class="container">
+  <div class="wrap_block">
+    <div class="block" id="block1">
+        <div class="bagel" id="bg1">1</div>
+        <div class="bagel" id="bg2">2</div>
+        <div class="bagel" id="bg3">3</div>
+        <div class="bagel" id="bg4">4</div>
+        <div class="bagel" id="bg5">5</div>
+        <div class="bagel" id="bg6">6</div>
+        <div class="bagel" id="bg7">7</div>
+        <div class="bagel" id="bg8">8</div>
+        <div class="bagel" id="bg9">9</div>
+        <div class="bagel" id="bg10">10</div>
+        <div class="bagel" id="bg11">11</div>
+        <div class="bagel" id="bg12">12</div>
+        <div class="bagel" id="bg13">13</div>
+        <div class="bagel" id="bg14">14</div>
+        <div class="bagel" id="bg15">15</div>
+        <div class="bagel" id="bg16">16</div>
+        <div class="bagel" id="bg17">17</div>
+        <div class="bagel" id="bg18">18</div>
+        <div class="bagel" id="bg19">19</div>
+        <div class="bagel" id="bg20">20</div>
+        <div class="bagel" id="bg21">21</div>
+        <div class="bagel" id="bg22">22</div>
+        <div class="bagel" id="bg23">23</div>
+        <div class="bagel" id="bg24">24</div>
+        <div class="bagel" id="bg25">25</div>
+        <div class="bagel" id="bg26">26</div>
+        <div class="bagel" id="bg27">27</div>
+        <div class="bagel" id="bg28">28</div>
+        <div class="bagel" id="bg29">29</div>
+        <div class="bagel" id="bg30">30</div>
+        <div class="bagel" id="bg31">31</div>
+        <div class="bagel" id="bg32">32</div>
+        <div class="bagel" id="bg33">33</div>
+        <div class="bagel" id="bg34">34</div>
+        <div class="bagel" id="bg35">35</div>
+        <div class="bagel" id="bg36">36</div>
+        <div class="bagel" id="bg37">37</div>
+        <div class="bagel" id="bg38">38</div>
+        <div class="bagel" id="bg39">39</div>
+        <div class="bagel" id="bg40">40</div>
+        <div class="bagel" id="bg41">41</div>
+        <div class="bagel" id="bg42">42</div>
+        <div class="bagel" id="bg43">43</div>
+        <div class="bagel" id="bg44">44</div>
+        <div class="bagel" id="bg45">45</div>
+        <div class="bagel" id="bg46">46</div>
+        <div class="bagel" id="bg47">47</div>
+        <div class="bagel" id="bg48">48</div>
+        <div class="bagel" id="bg49">49</div>
+        <div class="bagel" id="bg50">50</div>
+        <div class="bagel" id="bg51">51</div>
+        <div class="bagel" id="bg52">52</div>
+        <div class="bagel" id="bg53">53</div>
+        <div class="bagel" id="bg54">54</div>
+        <div class="bagel" id="bg55">55</div>
+        <div class="bagel" id="bg56">56</div>
+        <div class="bagel" id="bg57">57</div>
+        <div class="bagel" id="bg58">58</div>
+        <div class="bagel" id="bg59">59</div>
+        <div class="bagel" id="bg60">60</div>
+        <div class="bagel" id="bg61">61</div>
+        <div class="bagel" id="bg62">62</div>
+        <div class="bagel" id="bg63">63</div>
+        <div class="bagel" id="bg64">64</div>
+        <div class="bagel" id="bg65">65</div>
+        <div class="bagel" id="bg66">66</div>
+        <div class="bagel" id="bg67">67</div>
+        <div class="bagel" id="bg68">68</div>
+        <div class="bagel" id="bg69">69</div>
+        <div class="bagel" id="bg70">70</div>
+        <div class="bagel" id="bg71">71</div>
+        <div class="bagel" id="bg72">72</div>
+        <div class="bagel" id="bg73">73</div>
+        <div class="bagel" id="bg74">74</div>
+        <div class="bagel" id="bg75">75</div>
+        <div class="bagel" id="bg76">76</div>
+        <div class="bagel" id="bg77">77</div>
+        <div class="bagel" id="bg78">78</div>
+        <div class="bagel" id="bg79">79</div>
+        <div class="bagel" id="bg80">80</div>
+        <div class="bagel" id="bg81">81</div>
+        <div class="bagel" id="bg82">82</div>
+        <div class="bagel" id="bg83">83</div>
+        <div class="bagel" id="bg84">84</div>
+        <div class="bagel" id="bg85">85</div>
+        <div class="bagel" id="bg86">86</div>
+        <div class="bagel" id="bg87">87</div>
+        <div class="bagel" id="bg88">88</div>
+        <div class="bagel" id="bg89">89</div>
+        <div class="bagel" id="bg90">90</div>
+        <div class="bagel" id="bg91">91</div>
+        <div class="bagel" id="bg92">92</div>
+        <div class="bagel" id="bg93">93</div>
+        <div class="bagel" id="bg94">94</div>
+        <div class="bagel" id="bg95">95</div>
+        <div class="bagel" id="bg96">96</div>
+        <div class="bagel" id="bg97">97</div>
+        <div class="bagel" id="bg98">98</div>
+        <div class="bagel" id="bg99">99</div>
+        <div class="bagel" id="bg100">100</div>
+        <div class="bagel" id="bg101">101</div>
+        <div class="bagel" id="bg102">102</div>
+        <div class="bagel" id="bg103">103</div>
+        <div class="bagel" id="bg104">104</div>
+        <div class="bagel" id="bg105">105</div>
+        <div class="bagel" id="bg106">106</div>
+        <div class="bagel" id="bg107">107</div>
+        <div class="bagel" id="bg108">108</div>
+        <div class="bagel" id="bg109">109</div>
+        <div class="bagel" id="bg110">110</div>
+        <div class="bagel" id="bg111">111</div>
+        <div class="bagel" id="bg112">112</div>
+        <div class="bagel" id="bg113">113</div>
+        <div class="bagel" id="bg114">114</div>
+        <div class="bagel" id="bg115">115</div>
+        <div class="bagel" id="bg116">116</div>
+        <div class="bagel" id="bg117">117</div>
+        <div class="bagel" id="bg118">118</div>
+        <div class="bagel" id="bg119">119</div>
+        <div class="bagel" id="bg120">120</div>
+        <div class="bagel" id="bg121">121</div>
+        <div class="bagel" id="bg122">122</div>
+        <div class="bagel" id="bg123">123</div>
+        <div class="bagel" id="bg124">124</div>
+        <div class="bagel" id="bg125">125</div>
+        <div class="bagel" id="bg126">126</div>
+        <div class="bagel" id="bg127">127</div>
+        <div class="bagel" id="bg128">128</div>
+        <div class="bagel" id="bg129">129</div>
+        <div class="bagel" id="bg130">130</div>
+        <div class="bagel" id="bg131">131</div>
+        <div class="bagel" id="bg132">132</div>
+        <div class="bagel" id="bg133">133</div>
+        <div class="bagel" id="bg134">134</div>
+        <div class="bagel" id="bg135">135</div>
+        <div class="bagel" id="bg136">136</div>
+        <div class="bagel" id="bg137">137</div>
+        <div class="bagel" id="bg138">138</div>
+        <div class="bagel" id="bg139">139</div>
+        <div class="bagel" id="bg140">140</div>
+        <div class="bagel" id="bg141">141</div>
+        <div class="bagel" id="bg142">142</div>
+        <div class="bagel" id="bg143">143</div>
+        <div class="bagel" id="bg144">144</div>
+        <div class="bagel" id="bg145">145</div>
+        <div class="bagel" id="bg146">146</div>
+        <div class="bagel" id="bg147">147</div>
+    </div>
+    <div class="block" id="block2">
+
+    </div>
+    <div class="block" id="block3">
+
+    </div>
+  </div>
+  <!-- table -->
+<!--   <table class="rating">
+      <tr>
+          <th>id</th>
+          <th>ip</th>
+          <th>time</th>
+          <th>bagel</th>
+          <th>turns</th>
+      </tr>
+      <tr>
+          <td>1</td>
+          <td>456345354</td>
+          <td>5</td>
+          <td>10</td>
+          <td>15</td>
+      </tr>
+
+  </table> -->
+</div>
+
+<div class="wrap_prize_modal">
+    <div class="prize_modal">
+        <span id="close">x</span>
+        <h2 class="head_modal">Поздравляю!!!</h2>
+        <p id="rezult_hanoi">3 бублика за 7 секунд и ни одного лишнего хода! =)))</p>
+    </div>
+</div>
+
+
+
+<a href="/" id="dsa_link" title="на главную" style="position: fixed; font-size: 12px; top: 200px; left: 5px;">&lt;DsA&gt;</a>
+
+
+<script src="../../js/jquery-2.2.1.min.js"></script>
+<script src="../../js/jquery-ui.js"></script>
+<script src="js/script.js"></script>
+
+
+</body>
+</html>

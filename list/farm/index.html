@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ферма соседи</title>
+	<link rel="stylesheet" href="css/main.css" type="text/css" />
+	<link rel="stylesheet" href="../css/dsa.css" type="text/css" />
+	<script type="text/javascript" src="../js/jquery-2.2.1.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body>
+	<div class="wrap_bg">
+		<div class="wrapper">
+			<div class="head">
+
+				<ul class="main_menu">
+					<li>
+						<a href="/" class="current">
+							<span>Главная</span>
+						</a>
+					</li>
+					<li>
+						<a href="/news/">
+							<span>Новости</span>
+						</a>
+					</li>
+					<li>
+						<a href="/otzyvy">
+							<span>Отзывы</span>
+						</a>
+					</li>
+					<li>
+						<a href="/register">
+							<span>Регистрация</span>
+						</a>
+					</li>
+					<li>
+						<a href="/faq/">
+							<span>Инструкция</span>
+						</a>
+					</li>
+					<li>
+						<a href="/about/">
+							<span>FAQ</span>
+						</a>
+					</li>
+				</ul>
+
+				<div class="head_content">
+					<div class="ticker">
+						<marquee behavior="scroll" direction="left">Lorem ipsum dolor sit amet, consectetur adipisicing.</marquee>
+					</div>
+
+					<div class="data_project visit_users">
+						<p class="head_wind">старт проекта 10.02.2016</p>
+						<br>
+						Пользователей: <b>5</b>
+						<br/>
+						Выплат: <b>3</b>
+						<br>
+						Выплачено:
+						<b>36 Руб.</b>
+						<br/>
+						<br/>
+						На сайте:
+						<span title='Онлайн'>2</span>
+						<a  title="Пользователи Online" href="/online/">[Кто?]</a>
+						<br />
+					</div>
+
+				</div>
+				<ul class="sub_menu">
+					<li>
+						<a href="/bonus/">Бонус</a>
+					</li>
+					<li>
+						<a href="/top100/">
+							<span>Топ 100</span>
+						</a>
+					</li>
+					<li>
+						<a href="/concurs_ref">
+							<span>Конкурс</span>
+						</a>
+					</li>
+					<li>
+						<a href="/online/">
+							<span>Кто онлайн</span>
+						</a>
+					</li>
+					<li>
+						<a href="/action//">
+							<span>Контакты</span>
+						</a>
+					</li>
+					<li>
+						<a href="/otzyvy/">
+							<span>Отзывы</span>
+						</a>
+					</li>
+					<li>
+						<a href="/top100/">
+							<span>Топ 100</span>
+						</a>
+					</li>
+					<li>
+						<a href="/logout">Выход</a>
+					</li>
+				</ul>
+			</div>
+
+			<!-- container -->
+			<div class="container">
+
+			<!-- left_column -->
+				<div class="left_column">
+					<div class="bgmain6">Заголовок</div>
+					<div class="bgmain5">
+						<div class="bgmainb2" id="scrollheight">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, quae distinctio omnis corporis suscipit repudiandae ex neque non ipsum officia odio animi nulla quas atque expedita quisquam, mollitia eligendi soluta!
+						</div><br><br>
+						<table class="tables">
+							<tr>
+								<th>id</th>
+								<th>name</th>
+								<th>number1</th>
+								<th>numb</th>
+							</tr>
+						</table>
+					</div>
+				</div>
+
+				<!-- right_column -->
+
+				<div class="right_column">
+					<div class="autoriz">
+						<form action="/login" method="post">
+							<label for="user">
+								Логин:
+								<input type="text" name="user" id="user"></label>
+							<label for="pass">
+								Пароль:
+								<input type="password" name="pass" id="pass"></label>
+							<img class="captcha_img" title="caption" alt="капча" width="120" height="40">
+							<label for="code">
+								Код:
+								<input name="keystring" type="text" size="10" maxlength="4" id="code"></label>
+							<span>
+								<a href="/remind" class="a_pass">
+									<b>Забыли пароль?</b>
+								</a>
+							</span>
+							<button name="login" class="sub_btn">вход</button>
+						</form>
+					</div>
+
+					<!-- menu -->
+					<div id="menu3x">
+						<ul class="menu_vertical">
+							<li id="changeclass" class="menuhid">
+								<a href="javascript:void(0);">Пользователь</a>
+							</li>
+							<div id="menuhid-hidden0" class="menu_hides">
+								<li>
+									<a href="/account/">Аккаунт</a>
+								</li>
+								<li>
+									<a href="/profile/">Профиль</a>
+								</li>
+								<li>
+									<a title="Внутренняя почта!" href="/pm/">
+										<span>Внутренняя почта</span>
+									</a>
+								</li>
+								<li>
+									<a href="/history/">История</a>
+								</li>
+								<li>
+									<a href="/wall/">Стена фермера</a>
+								</li>
+							</div>
+							<li class="menuhid">
+								<a href="javascript:void(0);">Баланс</a>
+							</li>
+							<div id="menuhid-hidden1" class="menu_hides">
+								<li>
+									<a href="/popoln/">Пополнить</a>
+								</li>
+								<li>
+									<a href="/perevod/">Перевод</a>
+								</li>
+								<li>
+									<a href="/convert/">Обменный пункт</a>
+								</li>
+								<li>
+									<a href="/vivod/">Вывод</a>
+								</li>
+								<li>
+									<a href="/poslednie_vyplaty/">
+										<span>Последние выплаты</span>
+									</a>
+								</li>
+							</div>
+
+							<li class="menuhid">
+								<a href="javascript:void(0);">Ферма</a>
+							</li>
+							<div id="menuhid-hidden2" class="menu_hides">
+								<li>
+									<a href="/newproduct#0">Поле</a>
+								</li>
+								<li>
+									<a href="/newproduct#1">Загоны</a>
+								</li>
+								<li>
+									<a href="/fabrika/">Фабрики продуктов</a>
+								</li>
+								<li>
+									<a href="/fabrika_blincik/">Фабрики Блинчиков</a>
+								</li>
+								<li>
+									<a href="/blinaya/">Блинная</a>
+								</li>
+								<li>
+									<a href="/rinok/">Рынок животных</a>
+								</li>
+								<li>
+									<a href="/lavka/">Лавка</a>
+								</li>
+								<li>
+									<a href="/magazin/">Магазин</a>
+								</li>
+								<li>
+									<a href="/sclad/">Склад</a>
+								</li>
+								<li>
+									<a href="/calc/">
+										Калькулятор <font color="red">NEW</font>
+									</a>
+								</li>
+							</div>
+							<li class="menuhid">
+								<a href="javascript:void(0);">Биржа</a>
+							</li>
+							<div id="menuhid-hidden3" class="menu_hides">
+								<li>
+									<a href="/birja_opit/">Биржа опыта</a>
+								</li>
+								<li>
+									<a href="/birja_korm/">Биржа кормов</a>
+								</li>
+							</div>
+							<li class="menuhid">
+								<a href="javascript:void(0);">
+									Акции <font color="red">NEW</font>
+								</a>
+							</li>
+							<div id="menuhid-hidden4" class="menu_hides">
+								<li>
+									<a href="/actions_describe">Описание</a>
+								</li>
+								<li>
+									<a href="/actions_popoln">Пополнить баланс</a>
+								</li>
+								<li>
+									<a href="/actions_kupiti">Купить акции</a>
+								</li>
+								<li>
+									<a href="/actions_buy">Купить вечные акции</a>
+								</li>
+								<li>
+									<a href="/actions_my">Мои акции</a>
+								</li>
+								<li>
+									<a href="/actions_vivod">Вывести средства</a>
+								</li>
+								<li>
+									<a href="/actions_top">ТОП 100</a>
+								</li>
+							</div>
+							<li class="menuhid">
+								<a href="javascript:void(0);">Соседи</a>
+							</li>
+							<div id="menuhid-hidden5" class="menu_hides">
+								<li>
+									<a href="/referals/">Ваши соседи</a>
+								</li>
+								<li>
+									<a href="/reflink/">Рекламные материалы</a>
+								</li>
+							</div>
+							<li class="menuhid">
+								<a href="javascript:void(0);">Об игре</a>
+							</li>
+							<div id="menuhid-hidden6" class="menu_hides">
+								<li>
+									<a href="/">
+										<span>Главная</span>
+									</a>
+								</li>
+								<li>
+									<a href="/news/">
+										<span>Новости</span>
+									</a>
+								</li>
+								<li>
+									<a href="/otzyvy/">
+										<span>Отзывы</span>
+									</a>
+								</li>
+								<li>
+									<a href="/about/">
+										<span>Информация</span>
+									</a>
+								</li>
+								<li>
+									<a href="/tos/">
+										<span>Польз. соглашение</span>
+									</a>
+								</li>
+								<li>
+									<a href="/faq/">
+										<span>Вопрос-Ответ</span>
+									</a>
+								</li>
+								<li>
+									<a href="/statistics/">
+										<span>Статистика</span>
+									</a>
+								</li>
+							</div>
+
+						</ul>
+					</div>
+
+					<div class="fo1r">
+						<b>Старт проекта:</b>
+						<?=$stats['start'];?>
+						<br>
+						<br>
+						Выплат: 3
+						<br>
+						Выплачено:
+						<a href="/poslednie_vyplaty/">36 руб</a>
+						<br>
+						<br>
+						<b>Резервы</b>
+						<br>
+						<table cellpadding="0" cellspacing="0" border="0" class="littleinfo">
+							<tr>
+								<td>Лавки:</td>
+								<td style="text-align:right;">3 р.</td>
+							</tr>
+							<tr>
+								<td>Выплат:</td>
+								<td style="text-align:right;">5 р.</td>
+							</tr>
+						</table>
+					</div>
+
+					<div id="tabs1">
+
+						<ul>
+							<li class="tab_">
+								<a href="javascript:void(0);" title="Статистика покупок">
+									<span>C.П.</span>
+								</a>
+							</li>
+							<li class="tab_">
+								<a href="javascript:void(0);" title="Продано сегодня">
+									<span>П.С.</span>
+								</a>
+							</li>
+							<li class="tab_">
+								<a href="javascript:void(0);" title="Куплено Фабрик">
+									<span>К.Ф.</span>
+								</a>
+							</li>
+							<li class="tab_">
+								<a href="javascript:void(0);" title="Куплено Полей и Загонов">
+									<span>К.Н.</span>
+								</a>
+							</li>
+						</ul>
+
+					</div>
+
+					<div id="tabs_content_container1">
+						<div id="tab0" class="tab_content" style="display: block;">
+							<b><u>Статистика покупок</u></b>
+							<br>
+							<table cellpadding="0" cellspacing="0" border="0" class="littleinfo">
+								<tr>
+									<td>Кур:</td>
+									<td >1</td>
+								</tr>
+								<tr>
+									<td>Свиней:</td>
+									<td >1</td>
+								</tr>
+								<tr>
+									<td>Овец:</td>
+									<td >1</td>
+								</tr>
+								<tr>
+									<td>Коров:</td>
+									<td >1</td>
+								</tr>
+								<tr>
+									<td>Лам:</td>
+									<td >1</td>
+								</tr>
+								<tr>
+									<td>Слонов:</td>
+									<td >1</td>
+								</tr>
+							</table>
+							<br></div>
+
+						<div id="tab1" class="tab_content" >
+							<b><u>Продано сегодня:</u></b>
+							<br>
+							<table cellpadding="0" cellspacing="0" border="0" class="littleinfo">
+								<tr>
+									<td>Кур:</td>
+									<td >2</td>
+								</tr>
+								<tr>
+									<td>Свиней:</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td>Овец:</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td>Коров:</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td>Лам:</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td>Слонов:</td>
+									<td>2</td>
+								</tr>
+							</table>
+							<br></div>
+
+						<div id="tab2" class="tab_content" >
+							<b>
+								<u>Куплено фабрик:</u>
+							</b>
+							<br>
+							<table cellpadding="0" cellspacing="0" border="0" class="littleinfo">
+								<tr>
+									<td>Тесто:</td>
+									<td >3</td>
+								</tr>
+								<tr>
+									<td>Фарш:></td>
+									<td >3</td>
+								</tr>
+								<tr>
+									<td>Сыр:</td>
+									<td >3</td>
+								</tr>
+								<tr>
+									<td>Сметана:</td>
+									<td >3</td>
+								</tr>
+								<tr>
+									<td>Варежек:</td>
+									<td >3</td>
+								</tr>
+								<tr>
+									<td>Удобрений:</td>
+									<td >3</td>
+								</tr>
+								<tr>
+									<td>Блин с мясом:</td>
+									<td >3</td>
+								</tr>
+								<tr>
+									<td>Блин с сыром:</td>
+									<td >3</td>
+								</tr>
+								<tr>
+									<td>Блин со сметаной:</td>
+									<td >3</td>
+								</tr>
+								<tr>
+									<td>Опыта:</td>
+									<td >3</td>
+								</tr>
+							</table>
+							<br></div>
+
+						<div id="tab3" class="tab_content" >
+							<b>
+								<u>Куплено:</u>
+							</b>
+							<br>
+							<table cellpadding="0" cellspacing="0" border="0" class="littleinfo">
+								<tbody>
+									<tr>
+										<td>Полей:</td>
+										<td >4</td>
+									</tr>
+									<tr>
+										<td>Курятников:</td>
+										<td >4</td>
+									</tr>
+									<tr>
+										<td>Свинарников:</td>
+										<td >4</td>
+									</tr>
+									<tr>
+										<td>Овчарен:</td>
+										<td >4</td>
+									</tr>
+									<tr>
+										<td>Коровников:</td>
+										<td >4</td>
+									</tr>
+									<tr>
+										<td>Ламовников:</td>
+										<td >4</td>
+									</tr>
+									<tr>
+										<td>Слоновников:</td>
+										<td >4</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+
+				<!-- box-shadow -->
+				<div class="bg_left_container"></div>
+				<div class="bg_right_container"></div>
+				<!-- box-shadow -->
+
+				<div class="foot_container">
+					© 2015
+					<a href="/"> <strong>Native-Farm.ru</strong>
+					</a>
+					|
+					<a href="/faq/">F.A.Q. (Вопрос-Ответ)</a>
+					|
+					<a href="/news/">Новости</a>
+					|
+					<a href="/tos/">Пользовательское соглашение</a>
+					Копирование любой текстовой и графической информации с сайта запрещено.
+				</div>
+			</div>
+			<!-- end container -->
+
+		</div>
+	</div>
+
+
+	<a href="/" id="dsa_link" title="на главную" style="position: fixed; font-size: 12px; top: 80px; left: 5px;">&lt;DsA&gt;</a>
+
+</body>
+</html>
