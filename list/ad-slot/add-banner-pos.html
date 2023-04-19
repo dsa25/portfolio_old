@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ad-slot</title>
+    <!-- <meta name="viewport" content="width=320, maximum-scale=3"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=1140, maximum-scale=3">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <script src="js/header.js"></script>
+
+    <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+    <div class="content_bl">
+        <div class="row">
+            <div class="flex jcsb aifs">
+                <div class="xl_65">
+
+                    <div class="flex jcsb aic forlinks_nav">
+                        <h1 class="head_page"><i class="fa fa-picture-o" aria-hidden="true"></i>
+                            654 баннерного места
+                        </h1>
+                        <a href="web-banners.html" class="mla btn btn_red">Отмена</a>
+                    </div>
+                    <div class="bg_bl p20">
+                        <form action="" class="allforms" novalidate>
+                            <div class="flex fww jcsb">
+                                <div class="xl_48">
+                                    <label for="nazvanie">Название баннерного места:</label>
+                                    <input type="text" id="nazvanie" name="title" maxlength="50"
+                                        placeholder="Баннерный блок №1" value="title">
+                                </div>
+                                <div class="xl_48">
+                                    <label for="adr_site">Адрес сайта:</label>
+                                    <input type="text" id="adr_site" name="adr_site" maxlength="50"
+                                        placeholder="http://..." value="url" readonly="urlsss">
+                                </div>
+                                <div class="xl_48">
+                                    <label for="tematica_site">Тематика сайта:</label>
+                                    <select name="id_theme" id="tematica_site">
+                                        <option value="0"></option>
+                                        <option value="1" selected="">one</option>
+                                        <option value="2">two</option>
+                                        <option value="2">three</option>
+                                    </select>
+                                </div>
+                                <div class="xl_48">
+                                    <label for="size_banner">Размер баннера:</label>
+                                    <select name="size_banner" id="size_banner1"
+                                        class="change_event">
+                                        <option value="728x90" data-size="25">728x90</option>
+                                        <option value="100x100" data-size="12">100x100</option>
+                                        <option value="600x90" data-size="20">600x90</option>
+                                        <option value="468x60" data-size="18">468x60</option>
+                                        <option value="234x60" data-size="14">234x60</option>
+                                        <option value="120x60" data-size="14">120x60</option>
+                                        <option value="120x90" data-size="14">120x90</option>
+                                        <option value="125x125" data-size="10">125x125</option>
+                                        <option value="120x240" data-size="13">120x240</option>
+                                        <option value="120x600" data-size="14">120x600</option>
+                                        <option value="160x600" data-size="14">160x600</option>
+                                        <option value="180x150" data-size="11">180x150</option>
+                                        <option value="240x400" data-size="14">240x400</option>
+                                        <option value="250x250" data-size="15">250x250</option>
+                                        <option value="300x250" data-size="17">300x250</option>
+                                        <option value="300x600" data-size="18">300x600</option>
+                                        <option value="336x280" data-size="20">336x280</option>
+                                        <option value="500x100" data-size="22">500x100</option>
+                                    </select>
+                                </div>
+                                <div class="xl_100">
+                                    <div class="wrap_banners">
+
+                                        <div class="bg_wrap_b">
+                                            <div class="flex">
+                                                <div class="dummy_block">
+                                                    <div class="head_dd"></div>
+                                                    <p class="head_d"></p>
+                                                    <span class="size_bl"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="xl_100 select_b_z" style="display: none;">
+                                        <div class="flex jcsb">
+                                            <div class="xl_48">
+                                                <label>Тип заглушки:</label>
+                                                <div class="wrap_chekcbox xl_80">
+                                                    <input type="radio" class="radio change_event"
+                                                        id="sel_bz1" name="num_settings" value="1"
+                                                        checked="">
+                                                    <label for="sel_bz1"
+                                                        id="construct_btn">Конструктор
+                                                        (Рекомендуется)</label>
+                                                    <input type="radio" class="radio change_event"
+                                                        id="sel_bz2" name="num_settings" value="2">
+                                                    <label for="sel_bz2" id="code_btn">Код
+                                                        баннера</label>
+                                                </div>
+                                            </div>
+                                            <div class="xl_48">
+                                                <label>Фон сайта:</label>
+                                                <div class="wrap_chekcbox">
+                                                    <input type="radio" class="radio change_event"
+                                                        id="bg_site1" name="bg_sites"
+                                                        checked="checked">
+                                                    <label for="bg_site1">Темный</label>
+                                                    <input type="radio" class="radio change_event"
+                                                        id="bg_site2" name="bg_sites">
+                                                    <label for="bg_site2">Светлый</label>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="setting_ban">
+                                        <div class="flex fww jcsb">
+                                            <label class="xl_100">Настройки заглушки:</label>
+                                            <div class="xl_48">
+                                                <label>Заголовок:</label>
+                                                <input type="text" id="head_p_text" name="set-title"
+                                                    value="Заголовок заглушки">
+                                            </div>
+                                            <div class="xl_48">
+                                                <label>Элементы графики:</label>
+                                                <select name="set-graf" id="background_image1"
+                                                    class="change_event">
+                                                    <option value="0">Нет фона</option>
+                                                    <option value="1" selected>Полосы вправо
+                                                    </option>
+                                                    <option value="2">Полосы влево</option>
+                                                    <option value="3">Крупные точки</option>
+                                                    <option value="4">Мелкие точки</option>
+                                                </select>
+                                            </div>
+                                            <div class="xl_20">
+                                                <label for="head_p_size1" class="dib">Размер
+                                                    заголовка:</label>
+                                                <input type="number" id="head_p_size1" min="0"
+                                                    max="90" class="change_event" value="15"
+                                                    name="set-size">
+                                            </div>
+                                            <div class="xl_20">
+                                                <label for="head_p_color1" class="dib">Цвет
+                                                    заголовка:</label>
+                                                <input type="color" id="head_p_color1"
+                                                    class="change_event" value="#e1bcbc"
+                                                    name="set-color">
+                                            </div>
+                                            <div class="flex jcsb xl_48">
+                                                <div class="xl_25">
+                                                    <label for="bg_color1" class="dib">Цвет
+                                                        фона:</label>
+                                                    <input type="color" id="bg_color1"
+                                                        class="change_event" value="#cd1d1d"
+                                                        name="set-bg">
+                                                </div>
+                                                <div class="xl_25">
+                                                    <label for="border_color1" class="dib">Цвет
+                                                        рамки:</label>
+                                                    <input type="color" id="border_color1"
+                                                        class="change_event" value="#2cce6a"
+                                                        name="set-border-color">
+                                                </div>
+                                                <div class="xl_35">
+                                                    <label for="border_size1" class="dib">Толщина
+                                                        рамки:</label>
+                                                    <input type="number" id="border_size1" min="0"
+                                                        max="10" class="change_event" value="3"
+                                                        name="set-border-size">
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="xl_100 for_code_b" style="display: none;">
+                                        <label>Код баннера:</label>
+                                        <textarea onchange="$('.head_dd').html($(this).val());"
+                                            onkeyup="$('.head_dd').html($(this).val());"
+                                            name="settings2" id="" cols="30"
+                                            rows="10"> json_decode($row['settings2'], true) </textarea>
+                                    </div>
+
+
+                                </div>
+
+                                <div class="xl_100">
+                                    <div class="flex aic jcsb">
+                                        <div class="xl_48">
+                                            <label for="opisanie_site">Описание сайта:</label>
+                                        </div>
+                                        <div class="xl_48 flex aic">
+                                            <label><b>Создать заглушку</b> click =></label>
+                                            <a href="javascript:void(0);"
+                                                class="btn_sh pls active"><i
+                                                    class="fa fa-plus-square"
+                                                    aria-hidden="true"></i></a>
+                                            <a href="javascript:void(0);" class="btn_sh mns"><i
+                                                    class="fa fa-minus-square"
+                                                    aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                    <textarea name="descr_site" id="opisanie_site" cols="30"
+                                        rows="10">description site ...</textarea>
+                                </div>
+
+                                <div class="xl_100">
+                                    <label for="">Режим размещения:</label>
+                                    <div class="wrap_chekcbox">
+                                        <input type="radio" class="radio" id="rej01"
+                                            name="typ_price" checked="" value="1">
+                                        <label for="rej01" data-label="Цена за неделю:" onclick="var price_text =
+                                            $(this).attr('data-label');
+                                            $('#price_text').text(price_text);$('#price01').attr('placeholder',
+                                            'Рекомендуемая цена 30 рублей').show();
+                                            $('#price02').hide();">За неделю</label>
+
+                                        <input type="radio" class="radio" id="rej03"
+                                            name="typ_price" value="3">
+                                        <label for="rej03" data-label="Цена за 1000 показов:"
+                                            onclick="var price_text = $(this).attr('data-label'); $('#price_text').text(price_text); $('#price01').attr('placeholder', 'Рекомендуемая цена 2 рубля').show(); $('#price02').hide();">За
+                                            1000 показов</label>
+
+                                        <input type="radio" class="radio" id="rej02"
+                                            name="typ_price" value="2">
+                                        <label for="rej02" data-label="Цена за 1 клик:"
+                                            onclick="var price_text = $(this).attr('data-label'); $('#price_text').text(price_text); $('#price01').attr('placeholder', 'Рекомендуемая цена 1 рубль').hide(); $('#price02').show();">За
+                                            1 клик
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="xl_48">
+                                <label for="price01" id="price_text">Цена за неделю:</label>
+
+                                <label for="price01" id="price_text">Цена за 1 клик:</label>
+                                <label for="price01" id="price_text">Цена за 1000
+                                    показов:</label>
+                                <label for="price01" id="price_text">Цена за неделю: <span
+                                        class="tikitiki2">(Рекомендуемая цена 30
+                                        руб.)</span></label>
+                                <input type="number" min="1" id="price01" name="price" value="50"
+                                    placeholder="30" style="display:none;">
+
+                                <input type="number" min="0.1" step="0.1" id="price02" name="price2"
+                                    value="50" placeholder="Рекомендуемая цена 0.50 руб."
+                                    style="display:none;">
+                            </div>
+                            <div class="xl_48">
+                                <label for="rotation">Баннеров в ротации: <span
+                                        class="tikitiki2">(Максимум 30 шт.)</span></label>
+                                <input type="number" id="rotation" name="cnt_banners" max="30"
+                                    min="1" value="5">
+                            </div>
+                            <div class="xl_35 mra mla">
+                                <a href="javascript:void(0);" class="btn btn_green">Создать
+                                    баннерное место</a>
+
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+                <div class="xl_30" id="right_menu"> </div>
+            </div>
+        </div>
+    </div>
+    <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+    <script src="js/right_menu.js"></script>
+    <script src="js/footer.js"></script>
+
+    <link rel="stylesheet" href="css/chosen.css?v01">
+    <link rel="stylesheet" href="css/jquery-ui.css?v01">
+    <script src="../../js/jquery-2.2.1.min.js"></script>
+    <script src="../../js/jquery-ui.js"></script>
+    <!-- <script src="/js/core.js?v1"></script> -->
+    <script src="js/chosen.js?v00"></script>
+    <script src="js/script.js?v100"></script>
+    <!-- <script type="text/javascript" src="/js/firebase.js?v11"></script> -->
+    <!-- <script type="text/javascript" src="/js/firebase_subscribe.js?33"></script> -->
+</body>
+
+</html>

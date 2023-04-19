@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ad-slot</title>
+    <!-- <meta name="viewport" content="width=320, maximum-scale=3"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=1140, maximum-scale=3">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <script src="js/header.js"></script>
+
+    <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+    <div class="content_bl">
+        <div class="row">
+            <div class="flex jcsb aifs">
+                <div class="xl_65">
+
+                    <div class="flex jcsb aic forlinks_nav">
+                        <div>
+                            <a href="web-banners.html" class="links_nav"><i class="fa fa-picture-o"
+                                    aria-hidden="true"></i> Баннеры</a>
+                            <a href="javascript:void(0);" class="links_nav active"><i
+                                    class="fa fa-link" aria-hidden="true"></i> Cсылки</a>
+                            <a href="web-popups.html" class="links_nav dn"><i
+                                    class="fa fa-window-maximize" aria-hidden="true"></i> Popup</a>
+                        </div>
+                        <a href="#" class="mla btn btn_red"><i class="fa fa-link"
+                                aria-hidden="true"></i> Добавить блок ссылок</a>
+                    </div>
+                    <div class="bg_bl p20">
+                        <div class="wrap_table">
+                            <div class="table flex table_th aic jcsb">
+                                <span class="xl_5">№</span>
+                                <span class="xl_30">Название</span>
+                                <span class="xl_30">Адрес сайта</span>
+                                <span class="xl_20">Управление</span>
+                            </div>
+                            <div class="table flex aic jcsb bl-<?=$row['id'];?>">
+                                <div class="xl_5">1</div>
+                                <div class="xl_30">title</div>
+                                <div class="xl_30"><a href="#url" class="link_3">$row['url']</a>
+                                </div>
+                                <div class="xl_20">
+                                    <a href="#add-link-pos/1" class="btn_tbl"
+                                        data-title="Редактирование"><i class="fa fa-cog"
+                                            aria-hidden="true"></i></a>
+                                    <a href="#web-sales-stat/link/id/1" class="btn_tbl"
+                                        data-title="Статистика продаж"><i class="fa fa-pie-chart"
+                                            aria-hidden="true"></i></a>
+                                    <a href="#web-code/link/id/1" class="btn_tbl"
+                                        data-title="Код размещения"><i class="fa fa-file-code-o"
+                                            aria-hidden="true"></i></a>
+                                    <a href="javascript:void(0);" class="btn_tbl"
+                                        data-title="Удалить"><i class="fa fa-times-circle-o"
+                                            aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="xl_30" id="right_menu"> </div>
+            </div>
+        </div>
+    </div>
+    <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+    <script src="js/right_menu.js"></script>
+    <script src="js/footer.js"></script>
+
+    <link rel="stylesheet" href="css/chosen.css?v01">
+    <link rel="stylesheet" href="css/jquery-ui.css?v01">
+    <script src="../../js/jquery-2.2.1.min.js"></script>
+    <script src="../../js/jquery-ui.js"></script>
+    <!-- <script src="/js/core.js?v1"></script> -->
+    <script src="js/chosen.js?v00"></script>
+    <script src="js/script.js?v100"></script>
+    <!-- <script type="text/javascript" src="/js/firebase.js?v11"></script> -->
+    <!-- <script type="text/javascript" src="/js/firebase_subscribe.js?33"></script> -->
+</body>
+
+</html>

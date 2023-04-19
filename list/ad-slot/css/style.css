@@ -866,6 +866,7 @@ display: inline-block;
 	height: 100%;
 	width: 100%;
 }
+.dummy_block1,
 .dummy_block{
 	position: relative;
 	display: flex;
