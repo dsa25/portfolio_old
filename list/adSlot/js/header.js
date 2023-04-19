@@ -1,6 +1,6 @@
 let header = `<header>
         <div class="row flex aic">
-            <a href="/list/ad-slot" class="logo"></a>
+            <a href="index.html" class="logo"></a>
             <div class="main_banners">
                 <div class="dummy_block1" style="background: repeating-linear-gradient(-45deg, transparent, transparent 20px, rgba(255, 255, 255, 0.13) 20px, rgba(255, 255, 255, 0.13) 40px) rgb(82, 208, 73); height: 60px; width: 468px; border: 5px solid rgb(206, 44, 44); ">
                     <div class="head_dd" style="display: none;"></div>
