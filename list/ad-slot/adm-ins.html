@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ad-slot</title>
+    <!-- <meta name="viewport" content="width=320, maximum-scale=3"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=1140, maximum-scale=3">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <script src="js/header.js"></script>
+
+    <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+    <div class="content_bl">
+        <div class="row">
+            <h1 class="head_page">Список пополнений</h1>
+            <div class="bg_bl p20">
+
+                <div class="table table_th flex jcsb aic">
+                    <span class="xl_5 pager-order" data-model="all_insert" data-order="id">№</span>
+                    <span class="xl_25 pager-order" data-model="all_insert"
+                        data-order="id_user">Ник</span>
+                    <span class="xl_20 pager-order" data-model="all_insert"
+                        data-order="added">Дата</span>
+                    <span class="xl_25 pager-order" data-model="all_insert"
+                        data-order="typ_sys">Платежная система</span>
+                    <span class="xl_25 pager-order" data-model="all_insert"
+                        data-order="money">Сумма</span>
+                </div>
+
+
+
+                <div class="table flex aic jcsb" data-row="all_insert">
+                    <div class="xl_5">{tpl.id}</div>
+                    <div class="xl_25">{tpl.id_user}</div>
+                    <div class="xl_20">{tpl.added}</div>
+                    <div class="xl_25">{tpl.typ_sys}</div>
+                    <div class="xl_25">{tpl.money} <i class="fa fa-rub" aria-hidden="true"></i>
+                    </div>
+                </div>
+
+                <div class="table flex aic jcsb" data-row="all_insert">
+                    <div class="xl_5">{tpl.id}</div>
+                    <div class="xl_25">{tpl.id_user}</div>
+                    <div class="xl_20">{tpl.added}</div>
+                    <div class="xl_25">{tpl.typ_sys}</div>
+                    <div class="xl_25">{tpl.money} <i class="fa fa-rub" aria-hidden="true"></i>
+                    </div>
+                </div>
+
+                <div class="table flex aic jcsb" data-row="all_insert">
+                    <div class="xl_5">{tpl.id}</div>
+                    <div class="xl_25">{tpl.id_user}</div>
+                    <div class="xl_20">{tpl.added}</div>
+                    <div class="xl_25">{tpl.typ_sys}</div>
+                    <div class="xl_25">{tpl.money} <i class="fa fa-rub" aria-hidden="true"></i>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+    <script src="js/right_menu.js"></script>
+    <script src="js/footer.js"></script>
+
+    <link rel="stylesheet" href="css/chosen.css?v01">
+    <link rel="stylesheet" href="css/jquery-ui.css?v01">
+    <script src="../../js/jquery-2.2.1.min.js"></script>
+    <script src="../../js/jquery-ui.js"></script>
+    <!-- <script src="/js/core.js?v1"></script> -->
+    <script src="js/chosen.js?v00"></script>
+    <script src="js/script.js?v100"></script>
+    <!-- <script type="text/javascript" src="/js/firebase.js?v11"></script> -->
+    <!-- <script type="text/javascript" src="/js/firebase_subscribe.js?33"></script> -->
+</body>
+
+</html>

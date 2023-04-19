@@ -42,7 +42,7 @@ let menu = `
 		<span class="xl_45">50 <i class="fa fa-rub" aria-hidden="true"></i></span>
 	</div>
 	<div class="wrap_link_ss submenu_right">
-		<a href="web-links.html">
+		<a href="web-banners.html">
 			<i class="fa fa-bars icon" aria-hidden="true"></i>
 			<span>Площадки</span>
 		</a>
@@ -50,7 +50,7 @@ let menu = `
 			<i class="fa fa-street-view icon" aria-hidden="true"></i>
 			<span>Профиль</span>
 		</a>
-		<a href="/referals">
+		<a href="referals.html">
 			<i class="fa fa-users icon" aria-hidden="true"></i>
 			<span>Рефералы</span>
 		</a>
@@ -109,7 +109,7 @@ let menu = `
 		<span class="xl_45">50 <i class="fa fa-hand-pointer-o" aria-hidden="true"></i></span>
 	</div>
 	<div class="wrap_link_ss submenu_right">
-		<a href="/adv-links">
+		<a href="adv-links.html">
 			<i class="fa fa-shopping-bag icon" aria-hidden="true"></i>
 			<span>Покупки</span>
 		</a>
@@ -117,7 +117,7 @@ let menu = `
 			<i class="fa fa-street-view icon" aria-hidden="true"></i>
 			<span>Профиль</span>
 		</a>
-		<a href="/referals">
+		<a href="referals.html">
 			<i class="fa fa-users icon" aria-hidden="true"></i>
 			<span>Рефералы</span>
 		</a>

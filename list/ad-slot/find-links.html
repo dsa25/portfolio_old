@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ad-slot</title>
+    <!-- <meta name="viewport" content="width=320, maximum-scale=3"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=1140, maximum-scale=3">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <script src="js/header.js"></script>
+
+    <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+    <div class="content_bl">
+        <div class="row">
+            <div class="flex jcsb aifs">
+                <div class="xl_65">
+
+                    <div class="flex jcsb aic forlinks_nav">
+                        <div>
+                            <a href="javascript:void(0);" class="switch links_nav active"
+                                data-sw="7"><i class="fa fa-link" aria-hidden="true"></i> Покупка
+                                ссылок</a>
+                            <a href="javascript:void(0);" class="switch links_nav" data-sw="7"><i
+                                    class="fa fa-picture-o" aria-hidden="true"></i> Покупка
+                                баннеров</a>
+                            <a href="javascript:void(0);" class="switch links_nav" data-sw="7"><i
+                                    class="fa fa-window-maximize" aria-hidden="true"></i> Покупка
+                                popup</a>
+                        </div>
+                    </div>
+                    <div class="bg_bl p20">
+
+                        <div class="flex jcsb">
+                            <div class="xl_28 border_right">
+
+                                <form class="allforms">
+                                    <div class="wrap_searshe flex jcsb">
+                                        <input type="text" placeholder="Искать по домену"
+                                            class="domain" onclick="return false;">
+                                        <input type="submit" class="btn btn_green" value="Ок"
+                                            onclick="$('.is_domain_val').val(1); $('.is_domain').val($('.domain').val()); pag_load_model('find_links', 1); return false;">
+                                    </div>
+                                </form>
+
+                                <form class="allforms find-form">
+                                    <label>Тематика:</label>
+                                    <select name="id_theme">
+                                        <option value="1">theme 1</option>
+                                        <option value="2">theme 2</option>
+                                        <option value="3">theme 3</option>
+                                    </select>
+
+                                    <div class="wrap_sliders">
+                                        <div class="flex jcsb aic">
+                                            <label>Посещаемость:</label>
+                                            <span class="slider_diap" id="minmax1"></span>
+                                        </div>
+                                        <div id="slider-range1"></div>
+                                        <div class="flex jcsb aic">
+                                            <input type="number" id="min_sl1" value="0" step="1"
+                                                min="0" max="10" name="pop_min">
+                                            <input type="number" id="max_sl1" value="10" step="1"
+                                                min="0" max="10" name="pop_max">
+                                        </div>
+                                    </div>
+
+                                    <div class="wrap_sliders">
+                                        <div class="flex jcsb aic">
+                                            <label>CTR:</label>
+                                            <span class="slider_diap" id="minmax2"></span>
+                                        </div>
+                                        <div id="slider-range2"></div>
+                                        <div class="flex jcsb aic">
+                                            <input type="number" id="min_sl2" value="0" step="0.01"
+                                                min="0" max="1" name="ctr_min">
+                                            <input type="number" id="max_sl2" value="1" step="0.01"
+                                                min="0" max="1" name="ctr_max">
+                                        </div>
+                                    </div>
+
+                                    <div class="wrap_sliders">
+                                        <div class="flex jcsb aic">
+                                            <label>Цена:</label>
+                                            <span class="slider_diap" id="minmax3"></span>
+                                        </div>
+                                        <div id="slider-range3"></div>
+                                        <div class="flex jcsb aic">
+                                            <input type="number" id="min_sl3" value="0" step="50"
+                                                min="0" max="500" name="price_min">
+                                            <input type="number" id="max_sl3" value="330" step="10"
+                                                min="0" max="550" name="price_max">
+                                        </div>
+                                    </div>
+                                    <div class="xl_50 mra mla pt10">
+                                        <input type="submit" class="btn btn_green" value="Найти"
+                                            onclick="$('.is_domain_val').val(0);$('.is_domain').val(''); $('.domain').val('');pag_load_model('find_links', 1); return false;">
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="xl_70">
+                                <div data-swb="7">
+                                    <p class="fon_s pb10 referalii to_hide">В системе
+                                        зарегистрировано
+                                        320 активных блоков ссылок.
+                                    </p>
+                                    <!-- or -->
+
+                                    <p class="fon_s pb10 find-block referalii">По вашему запросу
+                                        найдено:
+                                        <span class="find-cnt">2 сайтa</span>
+                                    </p>
+                                    <div class="wrap_table find-block">
+                                        <div class="table flex table_th aic jcsb">
+                                            <span class="xl_40 tal pager-order"
+                                                data-model="find_links"
+                                                data-order="url">Адрес</span>
+                                            <span class="xl_20 pager-order" data-model="find_links"
+                                                data-order="popular">Показов в
+                                                день</span>
+                                            <span class="xl_12 pager-order" data-model="find_links"
+                                                data-order="ctr">CTR</span>
+                                            <span class="xl_15 pager-order" data-model="find_links"
+                                                data-order="price">Цена</span>
+                                            <span class="xl_7"></span>
+                                        </div>
+
+                                        <div class="table flex aic jcsb">
+                                            <span class="xl_40 tal text_punkt">
+                                                <a href="" class="link_3">short_url</a></span>
+                                            <span class="xl_20">10</span>
+                                            <span class="xl_12"><span>.ctr</span> %</span>
+                                            <span class="xl_15">150 <i class="fa fa-rub"
+                                                    aria-hidden="true"></i></span>
+                                            <span class="xl_7">
+                                                <a href="" class="btn_tbl" data-title="Купить"><i
+                                                        class="fa fa-shopping-bag"
+                                                        aria-hidden="true"></i></a>
+                                            </span>
+                                        </div>
+                                        <div class="table flex aic jcsb">
+                                            <span class="xl_40 tal text_punkt">
+                                                <a href="" class="link_3">short_url</a></span>
+                                            <span class="xl_20">20</span>
+                                            <span class="xl_12"><span>.ctr</span> %</span>
+                                            <span class="xl_15">250 <i class="fa fa-rub"
+                                                    aria-hidden="true"></i></span>
+                                            <span class="xl_7">
+                                                <a href="" class="btn_tbl" data-title="Купить"><i
+                                                        class="fa fa-shopping-bag"
+                                                        aria-hidden="true"></i></a>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                <div data-swb="7">
+                                    <p class="fon_s pb10 referalii to_hide">В системе
+                                        зарегистрировано 1
+                                        активное баннерное место.
+                                    </p>
+                                    <!-- or -->
+
+                                    <p class="fon_s pb10 find-block referalii">По вашему запросу
+                                        найдено:
+                                        <span class="find-cnt">0 сайтов</span>
+                                    </p>
+                                    <div class="wrap_table find-block">
+                                        <div class="table flex table_th aic jcsb">
+                                            <span class="xl_40 tal pager-order"
+                                                data-model="find_links"
+                                                data-order="url">Адрес</span>
+                                            <span class="xl_20 pager-order" data-model="find_links"
+                                                data-order="popular">Показов в
+                                                день</span>
+                                            <span class="xl_12 pager-order" data-model="find_links"
+                                                data-order="ctr">CTR</span>
+                                            <span class="xl_15 pager-order" data-model="find_links"
+                                                data-order="price">Цена</span>
+                                            <span class="xl_7"></span>
+                                        </div>
+
+                                        <div class="table flex aic jcsb">
+                                            <span class="xl_40 tal text_punkt">
+                                                <a href="" class="link_3">short_url</a></span>
+                                            <span class="xl_20">10</span>
+                                            <span class="xl_12"><span>.ctr</span> %</span>
+                                            <span class="xl_15">150 <i class="fa fa-rub"
+                                                    aria-hidden="true"></i></span>
+                                            <span class="xl_7">
+                                                <a href="" class="btn_tbl" data-title="Купить"><i
+                                                        class="fa fa-shopping-bag"
+                                                        aria-hidden="true"></i></a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div data-swb="7">
+                                    <p class="fon_s pb10 referalii to_hide">В системе
+                                        зарегистрировано
+                                        0 аактивных окон.
+                                    </p>
+                                    <!-- or -->
+
+                                    <p class="fon_s pb10 find-block referalii">По вашему
+                                        запросу
+                                        найдено:
+                                        <span class="find-cnt">0 сайтов</span>
+                                    </p>
+                                    <div class="wrap_table find-block">
+                                        <div class="table flex table_th aic jcsb">
+                                            <span class="xl_40 tal pager-order"
+                                                data-model="find_links"
+                                                data-order="url">Адрес</span>
+                                            <span class="xl_20 pager-order" data-model="find_links"
+                                                data-order="popular">Показов в
+                                                день</span>
+                                            <span class="xl_12 pager-order" data-model="find_links"
+                                                data-order="ctr">CTR</span>
+                                            <span class="xl_15 pager-order" data-model="find_links"
+                                                data-order="price">Цена</span>
+                                            <span class="xl_7"></span>
+                                        </div>
+
+                                        <div class="table flex aic jcsb">
+                                            <div class="xl_100">not data</div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+                    </div>
+                </div>
+
+                <div class="xl_30" id="right_menu"> </div>
+            </div>
+        </div>
+    </div>
+    <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+    <script src="js/right_menu.js"></script>
+    <script src="js/footer.js"></script>
+
+    <link rel="stylesheet" href="css/chosen.css?v01">
+    <link rel="stylesheet" href="css/jquery-ui.css?v01">
+    <script src="../../js/jquery-2.2.1.min.js"></script>
+    <script src="../../js/jquery-ui.js"></script>
+    <!-- <script src="/js/core.js?v1"></script> -->
+    <script src="js/chosen.js?v00"></script>
+    <script src="js/script.js?v100"></script>
+    <!-- <script type="text/javascript" src="/js/firebase.js?v11"></script> -->
+    <!-- <script type="text/javascript" src="/js/firebase_subscribe.js?33"></script> -->
+</body>
+
+</html>

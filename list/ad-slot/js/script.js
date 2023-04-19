@@ -2,6 +2,9 @@ var pgurl = window.location.href.substr(
   window.location.href.lastIndexOf("/") + 1
 )
 console.log(pgurl)
+if (pgurl == "") {
+  location.href = "add-banner-pos.html"
+}
 
 function parse_url() {
   var arr = location.pathname.split("/")

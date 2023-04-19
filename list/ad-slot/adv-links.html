@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ad-slot</title>
+    <!-- <meta name="viewport" content="width=320, maximum-scale=3"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=1140, maximum-scale=3">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <script src="js/header.js"></script>
+
+    <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+    <div class="content_bl">
+        <div class="row">
+            <div class="flex jcsb aifs">
+                <div class="xl_65">
+                    <div class="flex jcsb aic forlinks_nav">
+                        <div>
+                            <a href="javascript:void(0);" class="switch links_nav active"
+                                data-sw="6"><i class="fa fa-link" aria-hidden="true"></i> Купленные
+                                ссылки</a>
+                            <a href="javascript:void(0);" class="switch links_nav" data-sw="6"><i
+                                    class="fa fa-picture-o" aria-hidden="true"></i> Купленные
+                                баннеры</a>
+                            <a href="javascript:void(0);" class="switch links_nav dn" data-sw="6"><i
+                                    class="fa fa-window-maximize" aria-hidden="true"></i> Купленные
+                                popup</a>
+                        </div>
+                    </div>
+                    <div class="bg_bl p20">
+                        <div class="wrap_table">
+                            <div class="table flex table_th aic jcsb">
+                                <span class="xl_25">Дата размещения</span>
+                                <span class="xl_30">Адрес размещения</span>
+                                <span class="xl_10">Сумма</span>
+                                <span class="xl_10">Переходы</span>
+                                <span class="xl_15"></span>
+                            </div>
+
+                            <div data-swb="6" style="display: block;">
+                                <div class="table flex aic jcsb bg_green row-<?=$row['id'];?>">
+                                    <div class="xl_25">07.07.2017 10:45</div>
+                                    <div class="xl_30"><a href="" class="link_3">url.ru</a></div>
+                                    <div class="xl_10">100 <i class="fa fa-rub"
+                                            aria-hidden="true"></i>
+                                    </div>
+                                    <div class="xl_10">3</div>
+                                    <div class="xl_15 tal">
+                                        <a href="" class="btn_tbl" data-title="Информация о сделке">
+                                            <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="" class="btn_tbl" data-title="Повторить покупку">
+                                            <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="javascript:void(0);" class="btn_tbl"
+                                            data-title="Удалить"
+                                            onclick="popup_open('delete_window');">
+                                            <i class="fa fa-times-circle-o" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="table flex aic jcsb bg_red row-<?=$row['id'];?>">
+                                    <div class="xl_25">07.07.2017 10:45</div>
+                                    <div class="xl_30"><a href="" class="link_3">url.ru</a></div>
+                                    <div class="xl_10">100 <i class="fa fa-rub"
+                                            aria-hidden="true"></i>
+                                    </div>
+                                    <div class="xl_10">3</div>
+                                    <div class="xl_15 tal">
+                                        <a href="" class="btn_tbl" data-title="Информация о сделке">
+                                            <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="" class="btn_tbl" data-title="Повторить покупку">
+                                            <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="javascript:void(0);" class="btn_tbl"
+                                            data-title="Удалить"
+                                            onclick="popup_open('delete_window');">
+                                            <i class="fa fa-times-circle-o" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="table flex aic jcsb bg_gray row-<?=$row['id'];?>">
+                                    <div class="xl_25">07.07.2017 10:45</div>
+                                    <div class="xl_30"><a href="" class="link_3">url.ru</a></div>
+                                    <div class="xl_10">100 <i class="fa fa-rub"
+                                            aria-hidden="true"></i>
+                                    </div>
+                                    <div class="xl_10">3</div>
+                                    <div class="xl_15 tal">
+                                        <a href="" class="btn_tbl" data-title="Информация о сделке">
+                                            <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="" class="btn_tbl" data-title="Повторить покупку">
+                                            <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="javascript:void(0);" class="btn_tbl"
+                                            data-title="Удалить"
+                                            onclick="popup_open('delete_window');">
+                                            <i class="fa fa-times-circle-o" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div data-swb="6">
+                                <div class="table flex aic jcsb">
+                                    <div class="xl_100">У Вас нет размещенных ссылок</div>
+                                </div>
+                            </div>
+
+                            <div data-swb="6">
+                                <div class="table flex aic jcsb bg_gray row-<?=$row['id'];?>">
+                                    <div class="xl_25">07.07.2017 10:45</div>
+                                    <div class="xl_30"><a href="" class="link_3">url.ru</a></div>
+                                    <div class="xl_10">100 <i class="fa fa-rub"
+                                            aria-hidden="true"></i>
+                                    </div>
+                                    <div class="xl_10">3</div>
+                                    <div class="xl_15 tal">
+                                        <a href="" class="btn_tbl" data-title="Информация о сделке">
+                                            <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="" class="btn_tbl" data-title="Повторить покупку">
+                                            <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="javascript:void(0);" class="btn_tbl"
+                                            data-title="Удалить"
+                                            onclick="popup_open('delete_window');">
+                                            <i class="fa fa-times-circle-o" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="xl_30" id="right_menu"> </div>
+            </div>
+        </div>
+    </div>
+    <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+    <script src="js/right_menu.js"></script>
+    <script src="js/footer.js"></script>
+
+    <link rel="stylesheet" href="css/chosen.css?v01">
+    <link rel="stylesheet" href="css/jquery-ui.css?v01">
+    <script src="../../js/jquery-2.2.1.min.js"></script>
+    <script src="../../js/jquery-ui.js"></script>
+    <!-- <script src="/js/core.js?v1"></script> -->
+    <script src="js/chosen.js?v00"></script>
+    <script src="js/script.js?v100"></script>
+    <!-- <script type="text/javascript" src="/js/firebase.js?v11"></script> -->
+    <!-- <script type="text/javascript" src="/js/firebase_subscribe.js?33"></script> -->
+</body>
+
+</html>

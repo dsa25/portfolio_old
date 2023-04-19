@@ -12,7 +12,7 @@ let footer = `<footer>
                 <a href="#"><img src="img/88x31_wm.png"></a>
             </div>
 
-            <div style="font-size: 10px;">Сайт разработан студией: </div>
+            <div style="font-size: 10px;">Сайт разработан  </div>
         </div>
     </footer>
 
@@ -34,9 +34,7 @@ let footer = `<footer>
                 <a href="javascript:void(0);" class="link_2"
                     onclick="$(this).parent().parent().removeClass('active').prev().removeClass('active');popup_open('form_recovery');">Забыли
                     пароль?</a>
-                <input type="submit" class="btn btn_green" value="Войти">
-                <input type="hidden" name="module" value="ModelUser">
-                <input type="hidden" name="action" value="login">
+                <a href='' class="btn btn_green">Войти</a>
             </form>
         </div>
     </div>
@@ -52,11 +50,9 @@ let footer = `<footer>
                     <input type="email" placeholder="Email" name="email">
                     <span class="message_modal mpos_mail"></span>
                 </p>
-                <input type="submit" class="btn btn_green" value="Восстановить">
+                <a href='' class="btn btn_green">Восстановить</a>
                 <a href="javascript:void(0);" class="link_2"
                     onclick="$(this).parent().parent().removeClass('active').prev().removeClass('active');popup_open('form_aut');">Назад</a>
-                <input type="hidden" name="module" value="ModelUser">
-                <input type="hidden" name="action" value="recovery">
             </form>
         </div>
     </div>
@@ -87,12 +83,10 @@ let footer = `<footer>
                 <input type="checkbox" class="checkbox" id="p_sogl" name="rules">
                 <label for="p_sogl" class="p_sogl">
                     <p>Прочитал(а) принимаю условия</p>
-                    <a href="/rules" target="_blank" class="a_termsuse">пользовательского
+                    <a href="rules.html"  class="a_termsuse">пользовательского
                         соглашения</a>
                 </label>
-                <input type="submit" class="btn btn_green" value="Регистрация">
-                <input type="hidden" name="module" value="ModelUser">
-                <input type="hidden" name="action" value="register">
+                <a href='' class="btn btn_green">Регистрация</a>
             </form>
         </div>
     </div>
