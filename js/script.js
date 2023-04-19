@@ -24,7 +24,7 @@ let my_arr = [
   },
   { name: "guess", stack: ["HTML", "CSS", "JQuery"] },
   { name: "3D_hut", stack: ["HTML", "CSS(3D, gradient)", "JQuery"] },
-  { name: "ad-core.ru", stack: ["HTML", "CSS", "JQuery"] },
+  { name: "adCore", stack: ["HTML", "CSS", "JQuery"] },
   { name: "adSlot", stack: ["HTML", "CSS", "JQuery"] },
   { name: "mogo", stack: ["HTML", "CSS", "JQuery"] },
   { name: "folio", stack: ["HTML", "CSS", "JQuery"] },

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>adcore</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/grid.css?v=4">
+    <link rel="stylesheet" href="css/slick.css?v=01">
+    <link rel="stylesheet" href="css/chosen.css?v=3">
+    <link rel="stylesheet" href="css/style.css?v=28">
+
+</head>
+
+<body>
+
+    <script src="js/header.js"></script>
+    <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+
+    <div class="main_menu">
+        <div class="row pt5 pb5">
+
+            <div class="head_acc head_acc2"><a href="index.html" class="btn_back"><i
+                        class="fa fa-arrow-circle-left"></i></a><i class="fa fa-youtube-play"></i>
+                Youtube просмотры</div>
+
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="row">
+
+            <div class="head_acc dib">МЫ СТАРТОВАЛИ !</div>
+
+            <p class="notice notice_green p15 mb15 notice_block">Посмотрите это видео как минимум 45
+                секунд, и после этого вам будут зачислены средства.<br>
+                Если продолжительность видео менее 45 секунд, то Вам следует просмотреть видео ещё
+                раз
+                для полного завершения таймера.</p>
+
+            <div class="wr_youtube mt20 mb20">
+                <iframe frameborder="0" allowfullscreen=""
+                    src="https://www.youtube.com/embed/3EuS2d35kdg?enablejsapi=1&amp;playerapiid=ytplayer&amp;autoplay=0"
+                    id="myytplayer"></iframe>
+            </div>
+
+            <p class="tac my_video1" style="display: block;">Просмотрено <span id="played">0</span>
+                /
+                45
+                секунд</p>
+
+            <div class="fww_xs flex jcsb aic sm_100 md_90 lg_70 xl_50 mla mra wr_captcha"
+                style="display: none;">
+                <img src="http://ad-core.ru/captcha_star.php?color=4" class="captcha_img order2_xs">
+                <p class="xs_100 order1_xs wsnw pl5 pr5 tac star_pcs">Сколько звезд?</p>
+                <form action="Ads&amp;check_serf" class="order3_xs">
+                    <div class="flex fww jcsb aic wr_star_btn">
+                        <a href="javascript:void(0);" class="answer_captcha">0</a>
+                        <a href="javascript:void(0);" class="answer_captcha">1</a>
+                        <a href="javascript:void(0);" class="answer_captcha">2</a>
+                        <a href="javascript:void(0);" class="answer_captcha">3</a>
+                        <a href="javascript:void(0);" class="answer_captcha">4</a>
+                        <a href="javascript:void(0);" class="answer_captcha">5</a>
+                        <a href="javascript:void(0);" class="answer_captcha">6</a>
+                        <a href="javascript:void(0);" class="answer_captcha">7</a>
+                        <a href="javascript:void(0);" class="answer_captcha">8</a>
+                        <a href="javascript:void(0);" class="answer_captcha">9</a>
+                    </div>
+                    <input type="hidden" name="id" value="20977">
+                    <input type="hidden" name="captcha" value="0" class="captcha_val">
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        let time1 = 1;
+        var timerId = setInterval(timer, 1000);
+        function timer() {
+            if (time1 == 46) {
+                clearInterval(timerId)
+                document.querySelector('.my_video1').setAttribute('style', 'display: none;')
+                document.querySelector('.wr_captcha').setAttribute('style', 'display: flex;')
+                return
+            }
+            document.querySelector('#played').innerHTML = time1++
+        }
+    </script>
+
+
+    <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <script src="js/footer.js"></script>
+
+
+    <script src='js/jquery-2.2.5.min.js'></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/chosen.js?v=2"></script>
+    <script src="js/script.js?v=06"></script>
+
+</body>
+
+</html>
