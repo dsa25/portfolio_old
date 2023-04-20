@@ -203,6 +203,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: #ffff00c4;
+  text-shadow: 0 0 100px yellow;
+}
 a.active {
   color: red;
 }

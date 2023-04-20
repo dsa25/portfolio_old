@@ -7,42 +7,43 @@
 </head>
 
 <body>
-	<h4 class="head">Угадай число!</h4>
-	<p class="text">Вам предлагается играть с BB-8 в угадай число. Генерируется Случайное Число (далее СЧ) и Вы по очереди предлагаете свои варианты. У Вас великолепный ум и интуиция, а BB-8 просто делает расчеты и на перефериях поддается =)</p>
-	<div class="wrap">
-	<form action="" method="" class="form_style">
+	<div class="row">
 
-		<p class="text">Введите дипазон чисел</p>
-
-		<label>От:
-			<input type="text" name="from" class="from" value="0">
-		</label>
-
-		<label >До:
-			<input type="text" name="before" class="before" value="999">
-		</label><br>
-		<!-- <p class="text">Попыток: <b id="pop">0</b></p> -->
-
-		<span class="btn" id="generate">Сгенерировать случайное число</span> <br><br>
-
-		<label for="">Ваш ответ:
-			<input type="text" name="answer" class="answer" placeholder="enter" autocomplete="off">
-		</label>
-
-		<span class="btn" id="prover">Отправить</span>
-
-	</form>
-	<div class="attempt_wrap">
-		<p class="text">Результаты:</p>
-		<div class="attempt"></div>
+		<h4 class="head">Угадай число!</h4>
+		<p class="text">Вам предлагается играть с BB-8 в угадай число. Генерируется Случайное Число (далее
+			СЧ) и Вы по очереди предлагаете свои варианты. У Вас великолепный ум и интуиция, а BB-8 просто
+			делает расчеты и на перефериях поддается =)</p>
+		<div class="wrap">
+			<form action="" method="" class="form_style">
+		
+				<p class="text">Введите дипазон чисел</p>
+		
+				<label>От:
+					<input type="text" name="from" class="from" value="0">
+				</label>
+		
+				<label>До:
+					<input type="text" name="before" class="before" value="999">
+				</label><br>
+				<!-- <p class="text">Попыток: <b id="pop">0</b></p> -->
+		
+				<span class="btn" id="generate">Сгенерировать случайное число</span> <br><br>
+		
+				<label for="">Ваш ответ:
+					<input type="text" name="answer" class="answer" placeholder="enter" autocomplete="off">
+				</label>
+		
+				<span class="btn" id="prover">Отправить</span>
+		
+			</form>
+			<div class="attempt_wrap">
+				<p class="text">Результаты:</p>
+				<div class="attempt"></div>
+			</div>
+		</div>
 	</div>
-	</div>
 
-
-
-
-
-	<script src="/js/jquery-2.2.1.min.js"></script>
+	<script src="../../js/jquery-2.2.1.min.js"></script>
 	<script src="js/script.js"></script>
 
 </body>

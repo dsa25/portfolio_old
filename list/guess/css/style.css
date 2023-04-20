@@ -3,7 +3,7 @@
 body{
 	width: 100%;
 	min-width: 1080px;
-	min-height: 630px;
+	min-height: 100vh;
 	background-color: rgba(29, 20, 43, 0.5);
 	background-repeat: no-repeat;
 	/*background-image: url('https://i.ytimg.com/vi/IHLqWmGqOhY/maxresdefault.jpg');*/
@@ -22,9 +22,14 @@ body{
 	font-size: 30px;
 	margin: 10px 0;
 }
+.row{
+	max-width: 1200px;
+	margin: 0 auto;
+}
 .wrap{
 	white-space: nowrap;
 	min-width: 700px;
+	text-align: center;
 }
 .form_style{
 	white-space: normal;
