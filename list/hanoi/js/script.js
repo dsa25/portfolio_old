@@ -359,44 +359,47 @@ function sendChange(order, order_n, ord_bag, ord_us)
 }
 
 // отправка данных на сервер
-function getTable(order='time', order_n='ASC', where_col='bagel', where_val='all',  where_col2='', where_val2='')
-{
-    // console.log(order, order_n, where_col, where_val);
-    call_ajax({"module":"ModelResults", "action":"table",
-        "order":order, "order_n":order_n, "where_col":where_col, "where_val":where_val, "where_col2":where_col2, "where_val2":where_val2 });
+function getTable(
+  order = "time",
+  order_n = "ASC",
+  where_col = "bagel",
+  where_val = "all",
+  where_col2 = "",
+  where_val2 = ""
+) {
+  // console.log(order, order_n, where_col, where_val);
+  // call_ajax({"module":"ModelResults", "action":"table", "order":order, "order_n":order_n, "where_col":where_col, "where_val":where_val, "where_col2":where_col2, "where_val2":where_val2 });
 }
 
 // вывод таблицы(данные с сервера)
-function tableOut(data)
-{
-    let not_data = '<div class="table tac">Нет данных</div>';
-    let html = data.html == null ? not_data : data.html;
-    $('.wr_row_tbl .table').remove();
-    $('.wr_row_tbl').prepend(html);
-    // console.log('html');
-    if(data.html != null)
-        changeOrder(data.order, data.order_n);
+function tableOut(data) {
+  let not_data = '<div class="table tac">Нет данных</div>'
+  let html = data.html == null ? not_data : data.html
+  $(".wr_row_tbl .table").remove()
+  $(".wr_row_tbl").prepend(html)
+  // console.log('html');
+  if (data.html != null) changeOrder(data.order, data.order_n)
 }
 
 // сохранение результата
-function saveResult(class_name)
-{
-    let form = $(class_name);
-    let user_name = form.find('[name="user_name"]').val();
-    let now = form.find('[name="now"]').val();
-    let turns = form.find('[name="turns"]').val();
+function saveResult(class_name) {
+  let form = $(class_name)
+  let user_name = form.find('[name="user_name"]').val()
+  let now = form.find('[name="now"]').val()
+  let turns = form.find('[name="turns"]').val()
 
-// console.log(user_name, now, turns, countBagel);
+  // console.log(user_name, now, turns, countBagel);
 
-    call_ajax({
-        "module":"ModelResults",
-        "action":"saveResult",
-        "user_name":user_name,
-        "now":now,
-        "turns":turns,
-        "count_bagel":countBagel
-    });
+  return popup_open("formMsgSystem")
 
+  call_ajax({
+    module: "ModelResults",
+    action: "saveResult",
+    user_name: user_name,
+    now: now,
+    turns: turns,
+    count_bagel: countBagel
+  })
 }
 
 // добавляем в выпадающий список, если нет в списке
