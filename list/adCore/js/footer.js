@@ -1,16 +1,10 @@
 let footer = `<footer>
         <div class="hr"></div>
         <div class="row flex jcsb aic menu_foot">
-            <a href="/settings" class="btn_foot"><i class="fa fa-cogs"></i></a>
-
-            <?php if ($module == 'cabinet') { ?>
-            <a href="/" class="btn_foot"><i class="fa fa-audio-description"></i></a>
-            <?php } else { ?>
-            <a href="/cabinet" class="btn_foot"><i class="fa fa-desktop"></i></a>
-            <?php } ?>
-
-
-            <a href="/news" class="btn_foot btn_news1 add_news"><i
+            <a href="settings.html" class="btn_foot"><i class="fa fa-cogs"></i></a>
+            <a href="index.html" class="btn_foot"><i class="fa fa-audio-description"></i></a>
+            <a href="cabinet.html" class="btn_foot"><i class="fa fa-desktop"></i></a>
+            <a href="news.html" class="btn_foot btn_news1 add_news"><i
                     class="fa fa-newspaper-o"></i></a>
         </div>
     </footer>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>adcore</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/grid.css?v=4">
+    <link rel="stylesheet" href="css/slick.css?v=01">
+    <link rel="stylesheet" href="css/chosen.css?v=3">
+    <link rel="stylesheet" href="css/style.css?v=28">
+
+</head>
+
+<body>
+
+    <script src="js/header.js"></script>
+    <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+    <div class="main_menu">
+        <div class="row pt5 pb5">
+
+            <div class="head_acc head_acc2"><a href="cabinet.html" class="btn_back"><i
+                        class="fa fa-arrow-circle-left"></i></a><i class="fa fa-sitemap"></i>
+                СВОБОДНЫЕ
+                РЕФЕРАЛЫ</div>
+
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="row">
+
+            <div class="notice notice_green p15 mb15">
+                <p class="fs18 mb10">Внимание!!!</p>
+                <p>С момента покупки, место участником резервируется на час без возможности
+                    перекупить
+                    его в течение этого времени.</p>
+            </div>
+
+            <p class="fs18 mb15">Вы не умеете приглашать рефералов?</p>
+            <p>Приобретая данный статус, Вы автоматически становитесь лидером рефералов, то есть все
+                пользователи сервиса, которые проходят регистрацию в свободном режиме без своих
+                рефереров - становятся вашими рефералами!</p>
+            <p>Данный статус одновременно может иметь только один пользователь, а значит Вы будете
+                получать новых свободных рефералов до тех пор, пока Вас не заменит другой участник
+                проекта.
+                Оплачивается статус с рекламного баланса!</p>
+
+            <p class="color_gray tac pt10">На данный момент лидером рефералов является пользователь:
+            </p>
+            <p class="color_orange tac p20"><i class="fa fa-user" aria-hidden="true"></i> colya1986
+                (<span class="sv-stat" data-stat="lider-cnt" data-int="true">18</span> реф.)</p>
+
+            <p class="timers_ref">
+                <span class="timer__days" style="display: none;"></span>
+                <span class="timer__hours" style="display: none;"></span>
+                <span class="timer__hours">00</span> :
+                <span class="timer__minutes">10</span> :
+                <span class="timer__seconds">01</span>
+            </p>
+
+            <div class="tac">
+                <p class="timer__result"></p>
+
+                <a href="javascript:void(0);" class="btn btn_def">Стать лидером рефералов ( 25 <i
+                        class="fa fa-rub" aria-hidden="true"></i> )</a>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <script>
+        // класс для создание таймера обратного отсчета
+        class CountdownTimer {
+            constructor(deadline, cbChange, cbComplete) {
+                this._deadline = deadline;
+                this._cbChange = cbChange;
+                this._cbComplete = cbComplete;
+                this._timerId = null;
+                this._out = {
+                    days: '', hours: '', minutes: '', seconds: '',
+                    daysTitle: '', hoursTitle: '', minutesTitle: '', secondsTitle: ''
+                };
+                this._start();
+            }
+            static declensionNum(num, words) {
+                return words[(num % 100 > 4 && num % 100 < 20) ? 2 : [2, 0, 1, 1, 1, 2][(num % 10 < 5) ? num % 10 : 5]];
+            }
+            _start() {
+                this._calc();
+                this._timerId = setInterval(this._calc.bind(this), 1000);
+            }
+            _calc() {
+                const diff = this._deadline - new Date();
+                const days = diff > 0 ? Math.floor(diff / 1000 / 60 / 60 / 24) : 0;
+                const hours = diff > 0 ? Math.floor(diff / 1000 / 60 / 60) % 24 : 0;
+                const minutes = diff > 0 ? Math.floor(diff / 1000 / 60) % 60 : 0;
+                const seconds = diff > 0 ? Math.floor(diff / 1000) % 60 : 0;
+                this._out.days = days < 10 ? '0' + days : days;
+                this._out.hours = hours < 10 ? '0' + hours : hours;
+                this._out.minutes = minutes < 10 ? '0' + minutes : minutes;
+                this._out.seconds = seconds < 10 ? '0' + seconds : seconds;
+                this._out.daysTitle = CountdownTimer.declensionNum(days, ['день', 'дня', 'дней']);
+                this._out.hoursTitle = CountdownTimer.declensionNum(hours, ['час', 'часа', 'часов']);
+                this._out.minutesTitle = CountdownTimer.declensionNum(minutes, ['минута', 'минуты', 'минут']);
+                this._out.secondsTitle = CountdownTimer.declensionNum(seconds, ['секунда', 'секунды', 'секунд']);
+                this._cbChange ? this._cbChange(this._out) : null;
+                if (diff <= 0) {
+                    clearInterval(this._timerId);
+                    this._cbComplete ? this._cbComplete() : null;
+                }
+            }
+        }
+
+        // 1. Получим элементы в которые нужно вывести оставшееся количество дней, часов, минут и секунд
+        const elDays1 = document.querySelector('.timers_ref .timer__days');
+        const elHours1 = document.querySelector('.timers_ref .timer__hours');
+        const elMinutes1 = document.querySelector('.timers_ref .timer__minutes');
+        const elSeconds1 = document.querySelector('.timers_ref .timer__seconds');
+
+        // 2. Установим время, например, на 10 минут от текущей даты
+        const deadline1 = new Date(Date.now() + (10 * 60 * 1000 + 999));
+
+        // 3. Создадим новый объект, используя new CountdownTimer()
+        new CountdownTimer(deadline1, (timer) => {
+            elDays1.textContent = timer.days;
+            elHours1.textContent = timer.hours;
+            elMinutes1.textContent = timer.minutes;
+            elSeconds1.textContent = timer.seconds;
+            elDays1.dataset.title = timer.daysTitle;
+            elHours1.dataset.title = timer.hoursTitle;
+            elMinutes1.dataset.title = timer.minutesTitle;
+            elSeconds1.dataset.title = timer.secondsTitle;
+        }, () => {
+            document.querySelector('.timer__result').textContent = 'Таймер завершился!';
+        });
+
+    </script>
+
+
+    <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <script src="js/footer.js"></script>
+
+
+    <script src='js/jquery-2.2.5.min.js'></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/chosen.js?v=2"></script>
+    <script src="js/script.js?v=06"></script>
+
+</body>
+
+</html>

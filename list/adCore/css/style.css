@@ -240,7 +240,8 @@ footer .row {
 	color: #fff;
 	font-size: 27px;
 }
-.btn_foot:hover{
+.btn_foot:hover,
+.btn_foot.active{
 	color: rgb(225, 136, 58);
 }
 
@@ -511,7 +512,10 @@ html .ui-panel-page-container-a {
 	border-color: #1c9c3f;
 }
 .slick-slide {
-	outline: none
+	outline: none;
+}
+.myslider .slick-slide {
+	min-height: calc(100vh - 205px);
 }
 
 
