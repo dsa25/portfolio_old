@@ -8,24 +8,12 @@ for (let i = 1; i <= 8; i++) {
 
 const wr_list = document.querySelector(".wr_items")
 let my_arr = [
-  {
-    name: "cpa-rating.ru",
-    stack: ["HTML", "CSS", "JQuery", "Adaptive &#10004;"]
-  },
-  {
-    name: "hanoi",
-    stack: [
-      "HTML",
-      "CSS",
-      "JQuery",
-      "Adaptive &#10004;",
-      "Таблица (PHP, SQL, AJAX)"
-    ]
-  },
-  { name: "guess", stack: ["HTML", "CSS", "JQuery"] },
-  { name: "3D_hut", stack: ["HTML", "CSS(3D, gradient)", "JQuery"] },
+  { name: "cpa_rating", stack: ["HTML", "CSS", "JQuery", "Adaptive &#10004;"] },
   { name: "ad_core", stack: ["HTML", "CSS", "JQuery"] },
   { name: "adSlot", stack: ["HTML", "CSS", "JQuery"] },
+  { name: "guess", stack: ["HTML", "CSS", "JQuery"] },
+  { name: "hanoi", stack: ["HTML", "CSS", "JQuery", "Adaptive &#10004;"] },
+  { name: "3D_hut", stack: ["HTML", "CSS(3D, gradient)", "JQuery"] },
   { name: "mogo", stack: ["HTML", "CSS", "JQuery"] },
   { name: "folio", stack: ["HTML", "CSS", "JQuery"] },
   { name: "gridzilla", stack: ["HTML", "CSS", "JQuery", "Adaptive &#10004;"] }
