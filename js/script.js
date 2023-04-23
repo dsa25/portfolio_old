@@ -3,7 +3,7 @@ for (let i = 1; i <= 8; i++) {
 	my_photos += `<div data-swb="1"><img src="/img/ava/img${i}.jpg"></div>`
 }
 // document.querySelector(".wr_swb").innerHTML = my_photos
-// document.querySelector(".slider").setAttribute('style', 'display: block;')
+// document.querySelector(".slider").setAttribute("style", "display: block;")
 
 
 const wr_list = document.querySelector(".wr_items")
